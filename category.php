@@ -41,9 +41,9 @@
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
                         </div>
                         <div class="date-single">
-                            <?= date('d/m H:i'); ?>
+                            <?php the_time('d/m G:i'); ?>
                         </div>
-                        <div class="title-category">
+                        <div class="title-category padding-ajustes">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?>
                             </a>
@@ -73,15 +73,6 @@
                     <?php wordpress_pagination(); ?>
                 </div>
 
-                <ul class="pagination center">
-                    <li class="disabled"><a href="javascript:void(null)"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="javascript:void(null)">1</a></li>
-                    <li class="waves-effect"><a href="javascript:void(null)">2</a></li>
-                    <li class="waves-effect"><a href="javascript:void(null)">3</a></li>
-                    <li class="waves-effect"><a href="javascript:void(null)">4</a></li>
-                    <li class="waves-effect"><a href="javascript:void(null)">5</a></li>
-                    <li class="waves-effect"><a href="javascript:void(null)"><i class="material-icons">chevron_right</i></a></li>
-                </ul>
             </div>
             <div class="col s12 m4 l4">
                 <div class="title-publicidade center">

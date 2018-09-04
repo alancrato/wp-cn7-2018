@@ -129,7 +129,10 @@
                         <div class="title-publicidade">
                             Publicidade
                         </div>
-                        <div class="publicidade-quadrada-extra"></div>
+                        <div class="publicidade-quadrada-extra">
+                            <div data-premium data-adunit="CEARA_NEWS_MOBILE_INTERNA_3" data-sizes="[[300,250]]" data-device="mobile">
+                            </div>
+                        </div>
                         <div class="line"></div>
                     </div>
 

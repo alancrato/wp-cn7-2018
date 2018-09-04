@@ -120,8 +120,6 @@ nav .nav-search{
 
 .pub-top{
     width: 100%;
-    height: 100px;
-    background-color: #ececec;
 }
 
 .social-top{
@@ -331,9 +329,6 @@ nav .nav-search{
 
 .publicidade-quadrada-extra{
     width: 95%;
-    height: 300px;
-    margin: 0 auto;
-    background-color: #ececec;
 }
 
 .card{
@@ -352,8 +347,6 @@ nav .nav-search{
 
 .pub-center{
     width: 90%;
-    height: 250px;
-    background-color: #ececec;
     margin: 0 auto;
 }
 
@@ -385,10 +378,17 @@ nav .nav-search{
     color: #c3c3c3;
 }
 
+.pub-single-private{
+    width: 100%;
+}
+
+.pub-single-private img{
+    border-radius: 0;
+    width: 90%;
+}
+
 .pub-politica{
     width: 100%;
-    height: 600px;
-    background-color: #ececec;
 }
 
 .border-politica{
@@ -470,9 +470,6 @@ nav .nav-search{
 
 .publicidade-quadrada-politica {
     width: 100%;
-    height: 210px;
-    margin: 0 auto;
-    background-color: #ececec;
 }
 
 /*
@@ -629,8 +626,9 @@ blockquote {
 
 .content-single{
     margin-top: -5%;
-    font-size: 1.2em;
-    font-weight: 300;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #333;
 }
 
 .single{
@@ -692,7 +690,7 @@ blockquote {
     width: 3%;
 }
 
-.title-category{
+.title-category a{
     font-size: 1.5em;
     font-weight: 400;
     line-height: 1.1em;
@@ -722,6 +720,27 @@ blockquote {
 
 .pagination li.active a {
     color: black;
+    font-weight: 500;
+}
+
+.page-numbers {
+    padding: 1px 8px;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    vertical-align: top;
+}
+
+.current {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    background-color: #f7c341;
+    color: black !important;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -807,18 +826,105 @@ blockquote {
     color: #f7c341;
 }
 
-.time-date-mais-lidas img{
-    width: 10%;
-    float: left;
-    margin-right: 10px;
+.wpp-meta, .post-stats {
+    display: none;
 }
 
-.title-mais-lidas {
-    font-size: 1.5em;
+.padding-ajustes-mais-lidas{
+    margin-top: 10%;
+}
+
+
+/*
+    mais-lidas
+ */
+
+.wpp-list li{
+    margin: 5% 0 10% 0;
+}
+
+.wpp-list li a{
+    font-size: 1.8em;
     font-weight: 400;
     line-height: 1.1em;
     color: black;
-    /* padding: 5px 0; */
+}
+
+.wpp-list li a:hover{
+    color: #5a5a5a;
+}
+
+.number{
+    margin: 27% 0 69% 0;
+    color: #f7c341;
+}
+
+.title-mais-lidas-single {
+    font-size: 0.7em !important;
+    font-weight: 400 !important;
+}
+
+.number-single{
+    margin: 45% 0 162% 0 !important;
+    color: #f7c341;
+    font-size: 2em;
+}
+
+ol{
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.1em;
+    color: black;
+}
+
+ol li{
+    margin: 2% 0 5% 0;
+}
+
+/*
+    contato
+ */
+
+.title-contato{
+    margin-top: 5%;
+}
+
+.inf-contact{
+    padding: 5px 30px;
+    margin-top: 25px;
+}
+
+.inf-contact-title{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: black;
+}
+
+.inf-contact-content{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #a59a9a;
+    margin-bottom: 10%;
+}
+
+input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label{
+    color: #b5abab;
+}
+
+input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #b5abab;
+    -webkit-box-shadow: 0 1px 0 0 #b5abab;
+    box-shadow: 0 1px 0 0 #b5abab;
+}
+
+.validate{
+    border-bottom: 1px solid #b5abab !important;
+    box-shadow: 0 1px 0 0 #b5abab !important;
+}
+
+textarea{
+    border-bottom: 1px solid #b5abab !important;
+    box-shadow: 0 1px 0 0 #b5abab !important;
 }
 
 /*
@@ -1156,6 +1262,14 @@ blockquote {
 
     blockquote {
         margin: 8px 0 -8px 0;
+    }
+
+    .content-single {
+        font-size: 1.2em;
+    }
+
+    .number-single {
+        margin: 39% 8px 122% 5px !important;
     }
 
     /*

@@ -5,7 +5,10 @@
     <div class="row hide-on-med-and-down">
         <div class="col s12 m1 l1"></div>
         <div class="col s12 m10 l10">
-            <div class="pub-top"></div>
+            <div class="pub-top">
+                <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_3" data-sizes="[[728,90]]" data-device="desktop">
+                </div>
+            </div>
         </div>
         <div class="col s12 m1 l1"></div>
     </div>
@@ -116,10 +119,24 @@
                     <div class="line hide-on-med-and-down"></div>
 
                     <div class="pub-private-single">
+
+                        <div class="row hide-on-med-and-down">
+                            <div class="col s5">
+                                <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_1" data-sizes="[[300,250]]" data-device="desktop">
+                                </div>
+                            </div>
+                            <div class="col s1"></div>
+                            <div class="col s5">
+                                <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_2" data-sizes="[[300,250]]" data-device="desktop">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line hide-on-med-and-down"></div>
+
                         <br/>
                         <!--Anúncio Caucaia -->
                         <div class="title-pub-private-single">
-                            Publicidade
+                            *Publicidade
                         </div>
                         <a href="https://www.caucaia.ce.gov.br" target="_blank" class="hide-on-med-and-down">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/caucaia-single01.png" width="100%" title="Prefeitura de Caucaia">
@@ -127,82 +144,90 @@
                         <a href="https://www.caucaia.ce.gov.br" target="_blank" class="hide-on-med-and-up">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/caucaia-mobile2.png" width="100%" title="Prefeitura de Caucaia">
                         </a>
-                        <div class="line"></div>
                         <br/>
+                        <div class="line hide-on-med-and-down"></div>
+                        <br/>
+
                     </div>
 
                 </div>
 
                 <div class="col s12 m4 l4">
-                    <div class="title-publicidade">
+                    <div class="center pub-single-private hide-on-med-and-down">
+                        <div class="title-publicidade center">
+                            *Publicidade
+                        </div>
+                        <a href="https://www.caucaia.ce.gov.br" target="_blank">
+                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/caucaia-single02.png" width="100%" title="Prefeitura de Caucaia">
+                        </a>
+                    </div>
+                    <div class="line"></div>
+                    <br/>
+                    <div class="title-publicidade center">
                         Publicidade
                     </div>
-                    <div class="pub-politica hide-on-med-and-down"></div>
-                    <div class="publicidade-quadrada-politica hide-on-med-and-up"></div>
-                    <br/>
+                    <div class="hide-on-med-and-up">
+                        <div data-premium data-adunit="CEARA_NEWS_MOBILE_INTERNA_3" data-sizes="[[300,250]]" data-device="mobile">
+                        </div>
+                        <br/>
+                    </div>
+                    <div class="pub-politica hide-on-med-and-down">
+                        <!-- Bloco 01 Premmium -->
+                        <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_2" data-sizes="[[300,600]]" data-device="desktop">
+                        </div>
+                    </div>
                     <div class="line"></div>
                     <br/>
                     <div class="row">
-                        <div class="col s6 l6">
+                        <div class="col s7 m6 l6">
                             <div class="mais-destaque">
-                                Mais Lidas
+                                Mais Lidas de Hoje
                             </div>
                         </div>
-                        <div class="col s6 l6">
+                        <div class="col s5 m6 l6">
                             <div class="border-mais-destaques"></div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col s12">
-                            <div class="retranca-destaque-right">
-                                Fato ou Fake?
+                        <div class="row">
+                            <div class="col s2">
+                                <div class="date-single">
+                                    <?php
+                                        for($i = 1; $i <= 5; $i++){
+                                            $result = $i;
+                                            echo "<h3 class='number-single'>$result °</h3>";
+                                        }
+                                    ?>
+                                </div>
                             </div>
-                            <div class="tittle-destaque-right">
-                                Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
+                            <div class="col s10">
+                                <?php
+                                    $args = array(
+                                        'range' => 'last24hours',
+                                        'limit' => 5
+                                    );
+                                ?>
+                                <div class="title-mais-lidas-single padding-ajustes">
+                                    <?php
+                                    wpp_get_mostpopular( $args );
+                                    ?>
+                                </div>
                             </div>
-                            <br/>
-
-                            <div class="retranca-destaque-right">
-                                Fato ou Fake?
-                            </div>
-                            <div class="tittle-destaque-right">
-                                Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
-                            </div>
-                            <br/>
-
-                            <div class="retranca-destaque-right">
-                                Fato ou Fake?
-                            </div>
-                            <div class="tittle-destaque-right">
-                                Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
-                            </div>
-                            <br/>
-
-                            <div class="retranca-destaque-right">
-                                Fato ou Fake?
-                            </div>
-                            <div class="tittle-destaque-right">
-                                Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
-                            </div>
-                            <br/>
-
-                            <div class="retranca-destaque-right">
-                                Fato ou Fake?
-                            </div>
-                            <div class="tittle-destaque-right">
-                                Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
-                            </div>
-                            <div class="line"></div>
-                            <br/>
                         </div>
+                        <div class="line"></div>
+                        <br/>
                     </div>
 
-                    <div class="title-publicidade">
-                        Publicidade
+                    <div class="hide-on-med-and-up">
+                        <div class="title-publicidade center">
+                            *Publicidade
+                        </div>
+                        <div data-premium data-adunit="CEARA_NEWS_MOBILE_INTERNA_3" data-sizes="[[300,250]]" data-device="mobile">
+                        </div>
+                        <br/>
+                        <div class="line"></div>
                     </div>
-                    <div class="publicidade-quadrada-politica"></div>
-                    <div class="line"></div>
                 </div>
 
             </div>

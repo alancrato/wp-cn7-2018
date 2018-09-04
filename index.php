@@ -43,13 +43,26 @@
 
 <div class="container">
     <div class="row">
+
         <div class="col s12 m12 l12">
-            <div class="pub-center hide-on-med-and-down"></div>
+            <div class="pub-center hide-on-med-and-down">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Novo Bloco Home GG -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:970px;height:250px"
+                     data-ad-client="ca-pub-9443599461482101"
+                     data-ad-slot="5738708114"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
             <div class="hide-on-med-and-up">
                 <div class="title-publicidade">
                     Publicidade
                 </div>
-                <div class="pub-top"></div>
+                <div class="pub-top">
+                   ?
+                </div>
                 <br/>
                 <div class="line"></div>
             </div>
@@ -70,14 +83,35 @@
 <div class="container">
     <div class="row">
         <div class="col s12 m3 l3">
-            <div class="title-publicidade">
+            <div class="title-publicidade center">
                 Publicidade
             </div>
-            <div class="pub-politica hide-on-med-and-down"></div>
+            <div class="pub-politica center hide-on-med-and-down">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- single -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:160px;height:600px"
+                     data-ad-client="ca-pub-9443599461482101"
+                     data-ad-slot="2554252069"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
             <br/>
-            <div class="publicidade-quadrada-politica"></div>
+            <div class="publicidade-quadrada-politica center">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Bloco Index Política 2 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:120px;height:240px"
+                     data-ad-client="ca-pub-9443599461482101"
+                     data-ad-slot="7838257843"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
             <br/>
             <div class="line"></div>
+
         </div>
         <div class="col s12 m9 l9">
             <?php

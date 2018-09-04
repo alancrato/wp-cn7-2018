@@ -42,6 +42,11 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/init.js"></script>
 
+<!--  Js e Tag Premmium -->
+<div data-premium data-adunit="CEARA_NEWS_RODAPE" data-smart="true" data-sizes-desktop="[[970,90], [728,90]]" data-sizes-mobile="[[320,100, [320,50]]">
+</div>
+<script type="text/javascript" async="async" src="https://tags.premiumads.com.br/dfp/e9919bb9-5ad5-4e04-8b2a-a1d06485f75b"></script>
+
 <?php wp_footer();?>
 
 </body>

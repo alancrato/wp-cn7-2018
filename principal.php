@@ -48,7 +48,7 @@
     <div class="col s12 m7 l7">
         <div class="row center hide-on-med-and-up float-mais-principal-mobile">
             <div class="title-publicidade">
-                Publicidade
+                Publicidade Slide2
             </div>
             <div class="publicidade-quadrada"></div>
             <br/>
