@@ -30,7 +30,7 @@
                     }
                 ?>
             </a>
-            <div class="title-destaque">
+            <div class="title-destaque padding-ajustes">
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
                 </a>
@@ -62,7 +62,7 @@
             <div class="col s12 m6 l6">
                 <?php
                     $query = new WP_Query( array(
-                        'posts_per_page' => 4,
+                        'posts_per_page' => 3,
                         'offset' => 1,
                         'category_name' => 'politica',
                         'order' => 'DESC',
@@ -107,6 +107,7 @@
                 <?php
                     $query = new WP_Query( array(
                         'posts_per_page' => 3,
+                        'offset' => 4,
                         'category_name' => 'politica',
                         'order' => 'DESC',
                         'orderBy' => 'ID'
@@ -125,7 +126,7 @@
                             }
                         ?>
                     </div>
-                    <div class="tittle-destaque-right">
+                    <div class="tittle-destaque-right padding-ajustes">
                         <a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
                         </a>

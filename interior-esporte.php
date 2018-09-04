@@ -16,7 +16,7 @@
                     <?php
                     $query = new WP_Query( array(
                         'posts_per_page' => 1,
-                        'category_name' => 'politica',
+                        'category_name' => 'interior',
                         'order' => 'DESC',
                         'orderBy' => 'ID'
                     ));
@@ -62,7 +62,7 @@
                         $query = new WP_Query( array(
                             'posts_per_page' => 3,
                             'offset' => 1,
-                            'category_name' => 'politica',
+                            'category_name' => 'interior',
                             'order' => 'DESC',
                             'orderBy' => 'ID'
                         ));
@@ -117,7 +117,7 @@
                     <?php
                         $query = new WP_Query( array(
                             'posts_per_page' => 1,
-                            'category_name' => 'policia',
+                            'category_name' => 'esportes',
                             'order' => 'DESC',
                             'orderBy' => 'ID'
                         ));
@@ -163,7 +163,7 @@
                     $query = new WP_Query( array(
                         'posts_per_page' => 3,
                         'offset' => 1,
-                        'category_name' => 'policia',
+                        'category_name' => 'esportes',
                         'order' => 'DESC',
                         'orderBy' => 'ID'
                     ));
