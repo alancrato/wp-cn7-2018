@@ -1,56 +1,181 @@
 <div class="row colunas">
+
     <div class="col s12 m2 l2 center">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_01@2x.png"/>
-        <div class="title-coluna">
-            Argemiro e Fernando sob bandeira branca
-        </div>
+        <a href="<?php echo home_url('/');?>categoria/coluna/donizete-arruda">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_01@2x.png"/>
+        </a>
         <div class="btn-small">
             Donizete Arruda
         </div>
-    </div>
-    <div class="col s12 m2 l2 center">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_02@2x.png"/>
         <div class="title-coluna">
-            Ajuda do exército seria bem vinda
+            <?php
+                $query = new WP_Query( array(
+                    'posts_per_page' => 1,
+                    'category_name' => 'donizete-arruda',
+                    'order' => 'DESC',
+                    'orderBy' => 'ID'
+                ));
+
+                if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
+                ?>
+                    <a href="<?php echo home_url('/');?>categoria/coluna/donizete-arruda">
+                        <?php the_title(); ?>
+                    </a>
+                <?php
+                    endwhile;
+                else :
+                    _e('Aguardando Publicações.');
+                endif;
+                wp_reset_postdata();
+            ?>
         </div>
+    </div>
+
+    <div class="col s12 m2 l2 center">
+        <a href="<?php echo home_url('/');?>categoria/coluna/fernando-ribeiro">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_02@2x.png"/>
+        </a>
         <div class="btn-small">
             Fernando Ribeiro
         </div>
+        <div class="title-coluna">
+            <?php
+            $query = new WP_Query( array(
+                'posts_per_page' => 1,
+                'category_name' => 'fernando-ribeiro',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+
+            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
+                ?>
+                <a href="<?php echo home_url('/');?>categoria/coluna/fernando-ribeiro">
+                    <?php the_title(); ?>
+                </a>
+                <?php
+            endwhile;
+            else :
+                _e('Aguardando Publicações.');
+            endif;
+            wp_reset_postdata();
+            ?>
+        </div>
     </div>
     <div class="col s12 m2 l2 center">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_03@2x.png"/>
-        <div class="title-coluna">
-            Ouça o Quadro palavra de Fé
-        </div>
+        <a href="<?php echo home_url('/');?>categoria/coluna/pastor-jecer-goes">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_03@2x.png"/>
+        </a>
         <div class="btn-small">
             Pastor Jecer Goes
         </div>
+        <div class="title-coluna">
+            <?php
+            $query = new WP_Query( array(
+                'posts_per_page' => 1,
+                'category_name' => 'pastor-jecer-goes',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+
+            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
+                ?>
+                <a href="<?php echo home_url('/');?>categoria/coluna/pastor-jecer-goes">
+                    <?php the_title(); ?>
+                </a>
+                <?php
+            endwhile;
+            else :
+                _e('Aguardando Publicações.');
+            endif;
+            wp_reset_postdata();
+            ?>
+        </div>
     </div>
     <div class="col s12 m2 l2 center">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_04@2x.png"/>
-        <div class="title-coluna">
-            Economia ou Gastança?
-        </div>
+        <a href="<?php echo home_url('/');?>categoria/coluna/madson-vagner">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_04@2x.png"/>
+        </a>
         <div class="btn-small">
             Madson Vagner
         </div>
+        <div class="title-coluna">
+            <?php
+                $query = new WP_Query( array(
+                    'posts_per_page' => 1,
+                    'category_name' => 'madson-vagner',
+                    'order' => 'DESC',
+                    'orderBy' => 'ID'
+                ));
+            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
+                ?>
+                <a href="<?php echo home_url('/');?>categoria/coluna/madson-vagner">
+                    <?php the_title(); ?>
+                </a>
+                <?php
+            endwhile;
+            else :
+                _e('Aguardando Publicações.');
+            endif;
+            wp_reset_postdata();
+            ?>
+        </div>
     </div>
     <div class="col s12 m2 l2 center">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_05@2x.png"/>
-        <div class="title-coluna">
-            Arquitetura dos Sonhos
-        </div>
+        <a href="<?php echo home_url('/');?>categoria/coluna/raphael-barros">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_05@2x.png"/>
+        </a>
         <div class="btn-small">
             Raphael Barros
         </div>
+        <div class="title-coluna">
+            <?php
+                $query = new WP_Query( array(
+                    'posts_per_page' => 1,
+                    'category_name' => 'raphael-barros',
+                    'order' => 'DESC',
+                    'orderBy' => 'ID'
+                ));
+            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
+                ?>
+                <a href="<?php echo home_url('/');?>categoria/coluna/raphael-barros">
+                    <?php the_title(); ?>
+                </a>
+                <?php
+            endwhile;
+            else :
+                _e('Aguardando Publicações.');
+            endif;
+            wp_reset_postdata();
+            ?>
+        </div>
     </div>
     <div class="col s12 m2 l2 center">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_06@2x.png"/>
-        <div class="title-coluna">
-            Pressão
-        </div>
+        <a href="<?php echo home_url('/');?>categoria/coluna/roberto-pires">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_06@2x.png"/>
+        </a>
         <div class="btn-small">
             Roberto Pires
+        </div>
+        <div class="title-coluna">
+            <?php
+            $query = new WP_Query( array(
+                'posts_per_page' => 1,
+                'category_name' => 'roberto-pires',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
+                ?>
+                <a href="<?php echo home_url('/');?>categoria/coluna/roberto-pires">
+                    <?php the_title(); ?>
+                </a>
+                <?php
+            endwhile;
+            else :
+                _e('Aguardando Publicações.');
+            endif;
+            wp_reset_postdata();
+            ?>
         </div>
     </div>
 </div>

@@ -80,10 +80,46 @@
             </ul>-->
         </div>
         <div class="col s12 m4 l4">
+
+            <div class="row">
+                <div class="col s12 m1 l1"></div>
+                <div class="col s12 m10 l10">
+                    <div class="homicidometro center">
+                        <div class="title-homicidometro">
+                            Homicidômetro
+                        </div>
+                        <div class="subtitle-homicidometro">
+                            Mortes no Estado do ceará
+                        </div>
+                        <div class="bloco">
+                            <a class="waves-effect waves-light btn btn-large grey darken-4">
+                                3
+                            </a>
+                            <a class="waves-effect waves-light btn btn-large grey darken-4">
+                                2
+                            </a>
+                            <a class="waves-effect waves-light btn btn-large grey darken-4">
+                                6
+                            </a>
+                            <a class="waves-effect waves-light btn btn-large grey darken-4">
+                                1
+                            </a>
+                        </div>
+                        <div class="date-homicidometro">
+                            De 01/01/<?= date('Y'); ?> até <?= date('d/m/Y') ;?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="title-publicidade center">
                 Publicidade
             </div>
-            <div class="pub-category"></div>
+
+            <!-- Bloco 01 Premmium -->
+            <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_2" data-sizes="[[300,600]]" data-device="desktop">
+            </div>
+
             <br/>
             <div class="line-sidebar-category"></div>
             <br/>

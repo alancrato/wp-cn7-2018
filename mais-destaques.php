@@ -116,8 +116,10 @@
                         <div class="col s6 l6">
                             <div class="border-mais-destaques"></div>
                         </div>
-                        <iframe width="99%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/179576144&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
-                        </iframe>
+                        <div class="mais-destaque-iframe">
+                            <iframe width="90%" height="180" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/179576144&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+                            </iframe>
+                        </div>
                     </div>
                     <!--<div class="line"></div>-->
 
@@ -129,18 +131,19 @@
                         <div class="title-publicidade">
                             Publicidade
                         </div>
-                        <div class="publicidade-quadrada-extra">
-                            <div data-premium data-adunit="CEARA_NEWS_MOBILE_INTERNA_3" data-sizes="[[300,250]]" data-device="mobile">
-                            </div>
+                        <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
                         </div>
+                        <br/>
                         <div class="line"></div>
+                        <br/>
                     </div>
 
                     <div class="row center hide-on-med-and-up float-mais-principal-mobile">
                         <div class="title-publicidade">
                             Publicidade
                         </div>
-                        <div class="publicidade-quadrada"></div>
+                        <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
+                        </div>
                     </div>
                     <div class="line hide-on-med-and-up"></div>
 
@@ -153,8 +156,10 @@
                         <div class="col s7 l6">
                             <div class="border-mais-destaques"></div>
                         </div>
-                        <!--<iframe width="99%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/179576144&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
-                        </iframe>-->
+                        <div class="mais-destaque-iframe">
+                            <iframe width="90%" height="180" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/596932029&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
+                        </div>
                     </div>
                     <!--<div class="line"></div>-->
 

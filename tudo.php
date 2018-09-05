@@ -43,7 +43,7 @@
                             }
                         ?>
                     </div>
-                    <div class="tittle-destaque-right">
+                    <div class="tittle-destaque-right padding-ajustes">
                         <a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
                         </a>

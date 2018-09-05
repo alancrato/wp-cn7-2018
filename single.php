@@ -1,7 +1,6 @@
 <?php get_header();?>
 <br/>
 <div class="container">
-
     <div class="row hide-on-med-and-down">
         <div class="col s12 m1 l1"></div>
         <div class="col s12 m10 l10">
@@ -43,58 +42,99 @@
             </div>
 
             <div class="row">
-
                 <div class="col s12 m8 l8">
+
                     <div class="img-single">
                         <?php
                             if (has_post_thumbnail()) {
                                 the_post_thumbnail('custom-size');
                             }
                         ?>
-                        <?php
+                    </div>
+                    <?php
+                        if(get_post(get_post_thumbnail_id())->post_excerpt){
                             echo "<blockquote>";
                                 echo get_post(get_post_thumbnail_id())->post_excerpt;
                             echo "</blockquote>";
-                        ?>
-                        <div class="line"></div>
-                    </div>
-                    <div class="autor-date-social">
-                        <div class="row">
-                            <div class="col s12 m4 l4">
-                                <div class="autor-title">
-                                    <?php
+                                echo "<div class=\"line\"></div>";
+                        }
+                    ?>
+
+                    <?php
+                        if (get_field("autor")){
+                    ?>
+                        <div class="autor-date-social">
+                            <div class="row">
+                                <div class="col s12 m4 l4">
+                                    <div class="autor-title">
+                                        <?php
                                         $value = get_field( "autor" );
                                         if( $value ){
                                             echo 'Por: '.$value;
                                         }else{
                                             echo ' ';
                                         }
-                                     ?>
-                                </div>
-                            </div>
-                            <div class="col s6 m3 l3">
-                                <div class="time-date">
-                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
-                                </div>
-                                <div class="date-single">
-                                    <?php the_time('d/m G:i'); ?>
-                                </div>
-                            </div>
-                            <div class="col s6 m5 l5">
-                                <div class="row right ajuste-img-social-mobile">
-                                    <div class="col s4 facebook-single">
-                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
+                                        ?>
                                     </div>
-                                    <div class="col s4">
-                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/whatsapp.png"/>
+                                </div>
+                                <div class="col s6 m3 l3">
+                                    <div class="time-date">
+                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
                                     </div>
-                                    <div class="col s4">
-                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/twitter.png"/>
+                                    <div class="date-single">
+                                        <?php the_time('d/m G:i'); ?>
+                                    </div>
+                                </div>
+                                <div class="col s6 m5 l5">
+                                    <div class="row right ajuste-img-social-mobile">
+                                        <div class="col s4 facebook-single">
+                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
+                                        </div>
+                                        <div class="col s4">
+                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/whatsapp.png"/>
+                                        </div>
+                                        <div class="col s4">
+                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/twitter.png"/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php
+                    ?>
+
+                    <?php
+                        }else{
+                    ?>
+                        <div class="autor-date-social">
+                            <div class="row">
+                                <div class="col s6 m3 l3">
+                                    <div class="time-date">
+                                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
+                                    </div>
+                                    <div class="date-single">
+                                        <?php the_time('d/m G:i'); ?>
+                                    </div>
+                                </div>
+                                <div class="col s6 m5 l5">
+                                    <div class="row right ajuste-img-social-mobile">
+                                        <div class="col s4 facebook-single">
+                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
+                                        </div>
+                                        <div class="col s4">
+                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/whatsapp.png"/>
+                                        </div>
+                                        <div class="col s4">
+                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/twitter.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m4 l4"></div>
+                            </div>
+                        </div>
+                    <?php
+                        }
+                    ?>
 
                     <div class="content-single">
                         <?php the_content(); ?>
@@ -121,6 +161,10 @@
                     <div class="pub-private-single">
 
                         <div class="row hide-on-med-and-down">
+                            <br/>
+                            <div class="title-pub-private-single center">
+                                *Publicidade
+                            </div>
                             <div class="col s5">
                                 <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_1" data-sizes="[[300,250]]" data-device="desktop">
                                 </div>
@@ -135,8 +179,8 @@
 
                         <br/>
                         <!--Anúncio Caucaia -->
-                        <div class="title-pub-private-single">
-                            *Publicidade
+                        <div class="title-pub-private-single center">
+                            Publicidade
                         </div>
                         <a href="https://www.caucaia.ce.gov.br" target="_blank" class="hide-on-med-and-down">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/caucaia-single01.png" width="100%" title="Prefeitura de Caucaia">
@@ -216,7 +260,6 @@
                             </div>
                         </div>
                         <div class="line"></div>
-                        <br/>
                     </div>
 
                     <div class="hide-on-med-and-up">

@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lora|Open+Sans+Condensed:300i|Cuprum:400i|Lato:100i|Roboto:300i,400|Yanone+Kaffeesatz:300" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome.min.css">
 
-    <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon.png" sizes="32x32"/>
-
     <!--Analytcs-->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -53,7 +51,7 @@
                         </a>
                     </div>
                     <div class="col s12 m3 l3">
-                        <a href="ttp://www.instagram.com/cearanews7" target="_blank">
+                        <a href="http://www.instagram.com/cearanews7" target="_blank">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/instagram.png"/>
                         </a>
                     </div>

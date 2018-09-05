@@ -62,7 +62,9 @@
             <div class="title-publicidade center">
                 Publicidade
             </div>
-            <div class="pub-category"></div>
+            <!-- Bloco 01 Premmium -->
+            <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_2" data-sizes="[[300,600]]" data-device="desktop">
+            </div>
             <br/>
             <div class="line-sidebar-category"></div>
             <br/>

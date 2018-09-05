@@ -48,9 +48,13 @@
     <div class="col s12 m7 l7">
         <div class="row center hide-on-med-and-up float-mais-principal-mobile">
             <div class="title-publicidade">
-                Publicidade Slide2
+                Publicidade
             </div>
-            <div class="publicidade-quadrada"></div>
+            <div class="gif-bnb-mobile">
+                <a href="https://www.bnb.gov.br/simuladores" target="_blank">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnbMobile.gif"/>
+                </a>
+            </div>
             <br/>
             <div class="line-extra"></div>
         </div>
@@ -256,7 +260,8 @@
                             <div class="title-publicidade">
                                 Publicidade
                             </div>
-                            <div class="publicidade-quadrada"></div>
+                            <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_1" data-sizes="[[300,250]]" data-device="mobile">
+                            </div>
                         </div>
                         <div class="line hide-on-med-and-up"></div>
                     </div>

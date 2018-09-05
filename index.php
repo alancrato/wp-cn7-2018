@@ -28,8 +28,8 @@
         <div class="col s12 m1 l1"></div>
         <div class="col s12 m10 l10">
             <div class="slide-topo">
-                <a href="javascript:void(null)">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnb.gif"/>
+                <a href="https://www.bnb.gov.br/simuladores" target="_blank">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnb.gif" alt="Banco do Nordeste"/>
                 </a>
             </div>
         </div>
@@ -42,11 +42,12 @@
 </div>
 
 <div class="container">
-    <div class="row">
-
+    <div class="row center">
         <div class="col s12 m12 l12">
-            <div class="pub-center hide-on-med-and-down">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <div class="title-publicidade">
+                Publicidade
+            </div>
+            <div class="hide-on-med-and-down">
                 <!-- Novo Bloco Home GG -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:970px;height:250px"
@@ -60,8 +61,7 @@
                 <div class="title-publicidade">
                     Publicidade
                 </div>
-                <div class="pub-top">
-                   ?
+                <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_4" data-sizes="[[300,250]]" data-device="mobile">
                 </div>
                 <br/>
                 <div class="line"></div>
@@ -87,7 +87,6 @@
                 Publicidade
             </div>
             <div class="pub-politica center hide-on-med-and-down">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- single -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:160px;height:600px"
@@ -99,7 +98,6 @@
             </div>
             <br/>
             <div class="publicidade-quadrada-politica center">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Bloco Index Política 2 -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:120px;height:240px"
@@ -143,9 +141,34 @@
         </div>
         <div class="col s12 m9 l9">
             <?php
-            require 'justica.php';
+                require 'justica.php';
             ?>
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m1 l1"></div>
+        <div class="col s12 m10 l10">
+            <div class="pub-top hide-on-med-and-down">
+                <div class="title-publicidade center">
+                    Publicidade
+                </div>
+                <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_3" data-sizes="[[728,90]]" data-device="desktop">
+                </div>
+            </div>
+            <div class="hide-on-med-and-up ajuste-line-tuto">
+                <div class="title-publicidade center">
+                    Publicidade
+                </div>
+                <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_3" data-sizes="[[300,250]]" data-device="mobile">
+                </div>
+                <div class="line"></div>
+                <br/>
+            </div>
+        </div>
+        <div class="col s12 m1 l1"></div>
     </div>
 </div>
 
@@ -161,8 +184,19 @@
     <div class="row">
         <div class="col s12 m1 l1"></div>
         <div class="col s12 m10 l10">
-            <div class="pub-top"></div>
+            <div class="pub-top hide-on-med-and-down">
+                <div class="title-publicidade center">
+                    Publicidade
+                </div>
+                <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_4" data-sizes="[[728,90]]" data-device="desktop">
+                </div>
+            </div>
             <div class="hide-on-med-and-up ajuste-line-tuto">
+                <div class="title-publicidade center">
+                    Publicidade
+                </div>
+                <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_4" data-sizes="[[300,250]]" data-device="mobile">
+                </div>
                 <div class="line"></div>
                 <br/>
             </div>

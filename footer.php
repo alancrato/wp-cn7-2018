@@ -8,19 +8,20 @@
             </div>
             <div class="col s6 m3 border-menu-footer">
                 <ul>
-                    <li><a class="black-text" href="javascript:void(null)">Últimas</a></li>
-                    <li><a class="black-text" href="javascript:void(null)">Mais Lidas</a></li>
-                    <li><a class="black-text" href="javascript:void(null)">Contato</a></li>
+                    <li><a class="black-text" href="<?php echo home_url('/');?>ultimas-noticias">Últimas</a></li>
+                    <li><a class="black-text" href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
+                    <li><a class="black-text" href="<?php echo home_url('/');?>contato">Contato</a></li>
                     <li><a class="black-text" href="http://www.jornaldocariri.com.br" target="_blank">Jornal do Cariri</a></li>
                     <li><a class="black-text" href="http://www.plusfm.com.br" target="_blank">Plus Fm</a></li>
                 </ul>
             </div>
             <div class="col s6 m3 border-menu-footer">
                 <ul>
-                    <li><a class="black-text" href="#!">Facebook</a></li>
-                    <li><a class="black-text" href="#!">Instagram</a></li>
-                    <li><a class="black-text" href="#!">Whatsapp</a></li>
-                    <li><a class="black-text" href="#!">E-mail</a></li>
+                    <li><a class="black-text" href="http://www.facebook.com/cearanews7" target="_blank">Facebook</a></li>
+                    <li><a class="black-text" href="http://www.instagram.com/cearanews7" target="_blank">Instagram</a></li>
+                    <li><a class="black-text" href="http://www.twitter.com/cearanews7" target="_blank">Twitter</a></li>
+                    <li><a class="black-text" href="javascript:void(null)">Whatsapp</a></li>
+                    <li><a class="black-text" href="javascript:void(null)">E-mail</a></li>
                 </ul>
             </div>
             <div class="col s12 m3">
@@ -41,6 +42,9 @@
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/init.js"></script>
+
+<!-- JS Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <!--  Js e Tag Premmium -->
 <div data-premium data-adunit="CEARA_NEWS_RODAPE" data-smart="true" data-sizes-desktop="[[970,90], [728,90]]" data-sizes-mobile="[[320,100, [320,50]]">
