@@ -285,74 +285,63 @@
                 <div class="col s12 m9 l9"></div>
             </div>
             <div class="row">
-                <div class="col s12 m4 l4">
-                    <?php
-                    for($i = 1; $i <=2; $i++){;
-                        ?>
-                        <div class="row">
-                            <div class="col s4">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cards/home_04.png"/>
-                            </div>
-                            <div class="col s8">
-                                <div class="retranca-destaque-right">
-                                    Fato ou Fake?
-                                </div>
-                                <div class="tittle-leia-tambem">
-                                    Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
-                                </div>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <div class="col s12 m4 l4">
-                    <?php
-                    for($i = 1; $i <=2; $i++){;
-                        ?>
-                        <div class="row">
-                            <div class="col s4">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cards/home_04.png"/>
-                            </div>
-                            <div class="col s8">
-                                <div class="retranca-destaque-right">
-                                    Fato ou Fake?
-                                </div>
-                                <div class="tittle-leia-tambem">
-                                    Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
-                                </div>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <div class="col s12 m4 l4">
-                    <?php
-                    for($i = 1; $i <=2; $i++){;
-                        ?>
-                        <div class="row">
-                            <div class="col s4">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cards/home_04.png"/>
-                            </div>
-                            <div class="col s8">
-                                <div class="retranca-destaque-right">
-                                    Fato ou Fake?
-                                </div>
-                                <div class="tittle-leia-tambem">
-                                    Ciro Gomes vende imagem de machão e afirma não andar com seguranças em Fortaleza
+            <?php
+            $categories = get_the_category($post->ID);
+            if ($categories) {  $category_ids = array();
+                foreach($categories as $individual_category)
+                    $category_ids[] = $individual_category->term_id;
+                $args=array(
+                    'category__in' => $category_ids,
+                    'post__not_in' => array($post->ID),
+                    'showposts'=>3,
+                    'caller_get_posts'=>1
+                );
+                $my_query = new WP_Query($args);
+                if($my_query->have_posts() ) {
+                    $count=1;
+                    while ($my_query->have_posts()) {
+                        $my_query->the_post(); ?>
+
+                            <div class="col s12 m4 l4">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <a href="<?php the_permalink();?>">
+                                            <?php
+                                                if (has_post_thumbnail()) {
+                                                    the_post_thumbnail('thumbnail');
+                                                }
+                                            ?>
+                                        </a>
+                                    </div>
+                                    <div class="col s8">
+                                        <div class="retranca-destaque-right">
+                                            <?php
+                                                $cartola = get_field( "cartola" );
+                                                if( $cartola ){
+                                                    echo $cartola;
+                                                }else{
+                                                    echo ' ';
+                                                }
+                                            ?>
+                                        </div>
+                                        <div class="tittle-leia-tambem">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_title(); ?>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
+                        <?php $count ++; ?>
+                    <?php }
+                    wp_reset_query();
+                }
+            }
+            ?>
             </div>
 
             <div class="line"></div>
             <br/>
-
 
             <div class="row">
                 <div class="col s12 m3 l3">

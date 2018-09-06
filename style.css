@@ -668,7 +668,7 @@ blockquote {
     background-color: #c79a32;
 }
 
-.tittle-leia-tambem {
+.tittle-leia-tambem a {
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.1em;
@@ -1295,7 +1295,7 @@ textarea{
         margin-top: -6%;
     }
 
-    .tittle-leia-tambem {
+    .tittle-leia-tambem a {
         font-size: 1.3em;
         font-weight: 500;
     }
@@ -1529,7 +1529,7 @@ textarea{
         margin-top: -10%;
     }
 
-    .tittle-leia-tambem {
+    .tittle-leia-tambem a{
         font-weight: 500;
     }
 
@@ -1716,7 +1716,7 @@ textarea{
         font-size: 1.2em;
     }
 
-    .tittle-leia-tambem {
+    .tittle-leia-tambem a{
         font-size: 1em;
         font-weight: 500;
     }

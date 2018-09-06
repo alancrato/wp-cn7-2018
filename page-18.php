@@ -22,6 +22,7 @@
     </div>
     <div class="row float-category">
         <div class="col s12 m8 l8">
+
             <?php
                 $query = new WP_Query( array(
                     'posts_per_page' => 20,
@@ -29,16 +30,32 @@
                     'orderBy' => 'ID'
                 ));
             ?>
+
             <?php
                 if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
             ?>
+
+            <?php
+                $cat = array(
+                    'donizete-arruda' => 13,
+                    'fernando-ribeiro' => 15,
+                    'pastor-jecer-goes' => 39,
+                    'madson-vagner' => 44,
+                    'raphael-barros' => 16,
+                    'roberto-pires' => 40,
+                );
+                $categories = get_the_category();
+                $result = $categories[0]->term_id;
+            if(in_array($result,$cat)){
+                echo '';
+            }else{?>
                 <div class="row category">
                     <div class="col s12 m4 l4">
                         <a href="<?php the_permalink();?>">
                             <?php
-                                if (has_post_thumbnail()) {
-                                    the_post_thumbnail('custom-size');
-                                }
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail('custom-size');
+                            }
                             ?>
                         </a>
                     </div>
@@ -57,6 +74,10 @@
                     </div>
                 </div>
             <?php
+                }
+            ?>
+
+            <?php
                 endwhile;
             else : ?>
                 <p><?php _e('Aguardando Publicações.'); ?></p>
@@ -69,15 +90,6 @@
 
             <div class="line-category"></div>
             <br/>
-            <!--<ul class="pagination center">
-                <li class="disabled"><a href="javascript:void(null)"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active"><a href="javascript:void(null)">1</a></li>
-                <li class="waves-effect"><a href="javascript:void(null)">2</a></li>
-                <li class="waves-effect"><a href="javascript:void(null)">3</a></li>
-                <li class="waves-effect"><a href="javascript:void(null)">4</a></li>
-                <li class="waves-effect"><a href="javascript:void(null)">5</a></li>
-                <li class="waves-effect"><a href="javascript:void(null)"><i class="material-icons">chevron_right</i></a></li>
-            </ul>-->
         </div>
         <div class="col s12 m4 l4">
 
