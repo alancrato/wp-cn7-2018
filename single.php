@@ -368,8 +368,9 @@
                 </div>
                 <div class="col s12 m9 l9"></div>
                 <div class="col s12">
-                    <br/>
+                    <!--<br/>
                     *Links Patrocinado
+                    -->
                 </div>
             </div>
         </div>
