@@ -110,18 +110,28 @@
                     <div class="subtitle-homicidometro">
                         Mortes no Estado do ceará
                     </div>
+                    <?php
+                        $recent_posts = wp_get_recent_posts(array('post_type'=>'homicidios', 'numberposts' => 1, 'order' => 'DESC'));
+                        foreach( $recent_posts as $recent ){
+
+                            $excerpt = $recent["post_excerpt"];
+
+                            $str = $excerpt;
+                            $arr1 = str_split($str);
+                        }
+                    ?>
                     <div class="bloco">
                         <a class="waves-effect waves-light btn btn-large grey darken-4">
-                            3
+                            <?php print_r($arr1[0]); ?>
                         </a>
                         <a class="waves-effect waves-light btn btn-large grey darken-4">
-                            2
+                            <?php print_r($arr1[1]); ?>
                         </a>
                         <a class="waves-effect waves-light btn btn-large grey darken-4">
-                            6
+                            <?php print_r($arr1[2]); ?>
                         </a>
                         <a class="waves-effect waves-light btn btn-large grey darken-4">
-                            1
+                            <?php print_r($arr1[3]); ?>
                         </a>
                     </div>
                     <div class="date-homicidometro">

@@ -144,6 +144,31 @@ nav .nav-search{
     width: 30%;
 }
 
+.wpusb-item .wpusb-btn i {
+    font-style: normal;
+    font-size: 1.6em;
+    height: auto;
+    width: auto;
+}
+
+.wpusb .wpusb-whatsapp i, .wpusb .wpusb-whatsapp i:hover, #wpusb-container-follow .wpusb-whatsapp i, #wpusb-container-follow .wpusb-whatsapp i:hover {
+    color: #f7c341;
+}
+
+.wpusb .wpusb-twitter i, .wpusb .wpusb-twitter i:hover, #wpusb-container-follow .wpusb-twitter i, #wpusb-container-follow .wpusb-twitter i:hover {
+    color: #f7c341;
+}
+
+.wpusb .wpusb-facebook i, .wpusb .wpusb-facebook i:hover, #wpusb-container-follow .wpusb-facebook i, #wpusb-container-follow .wpusb-facebook i:hover {
+    color: #f7c341;
+}
+
+.wpusb {
+    font-size: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
 .btn-small {
     height: 28px;
     line-height: 28px;
@@ -586,7 +611,7 @@ footer ul a:hover{
     text-align: center;
 }
 
-.title-categoria-coluna a{
+.title-categoria-coluna{
     font-size: 2.8em;
     font-weight: bold;
     color: black;
@@ -1350,6 +1375,10 @@ textarea{
         width: 6%;
     }
 
+    .title-categoria-coluna{
+        text-align: left;
+    }
+
 }
 
 @media only screen and (max-width: 420px){
@@ -1448,7 +1477,7 @@ textarea{
         margin-bottom: 10px;
     }
 
-    .title-categoria-coluna a {
+    .title-categoria-coluna {
         font-size: 2.5em;
     }
 
@@ -1665,7 +1694,7 @@ textarea{
         font-size: 1.1em;
     }
 
-    .title-categoria-coluna a {
+    .title-categoria-coluna {
         font-size: 2.2em;
     }
 
@@ -2036,7 +2065,7 @@ textarea{
         font-size: 1.2em;
     }
 
-    .title-categoria-coluna a {
+    .title-categoria-coluna {
         font-size: 2em;
     }
 

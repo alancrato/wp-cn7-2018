@@ -86,18 +86,27 @@
                                     </div>
                                 </div>
                                 <div class="col s6 m5 l5">
-                                    <div class="row right ajuste-img-social-mobile">
-                                        <div class="col s4 facebook-single">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
+                                    <div class="wpusb wpusb-default social"id="wpusb-container-default"	data-element-url="<?= the_permalink(); ?>" data-element-title="<?php single_post_title(); ?>"	data-attr-reference="327"	data-attr-nonce="dca75d4f2c"	data-wpusb-component="counter-social-share">
+                                        <div class="wpusb-item wpusb-facebook">
+                                            <a href="https://www.facebook.com/sharer.php?u=<?= the_permalink(); ?>" target="_blank" data-action="open-popup" class="wpusb-button wpusb-btn" rel="nofollow">
+                                                <i class="wpusb-icon-facebook-default "></i>
+                                            </a>
+                                            <span data-element="facebook" class="wpusb-count wpusb-hide"></span>
                                         </div>
-                                        <div class="col s4">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/whatsapp.png"/>
+                                        <div class="wpusb-item wpusb-twitter">
+                                            <a href="https://twitter.com/intent/tweet?url=<?= the_permalink(); ?>" target="_blank" data-action="open-popup"	class="wpusb-button wpusb-btn" rel="nofollow">
+                                                <i class="wpusb-icon-twitter-default"></i>
+                                            </a>
+                                            <span data-element="twitter" class="wpusb-count wpusb-hide"></span>
                                         </div>
-                                        <div class="col s4">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/twitter.png"/>
+                                        <div class="wpusb-item wpusb-whatsapp">
+                                            <a href="whatsapp://send?text=<?= the_permalink(); ?>" target="_blank" data-action="open-popup"	class="wpusb-button wpusb-btn" rel="nofollow">
+                                                <i class="wpusb-icon-whatsapp-default"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     <?php
@@ -117,15 +126,23 @@
                                     </div>
                                 </div>
                                 <div class="col s6 m3 l3">
-                                    <div class="row right ajuste-img-social-mobile">
-                                        <div class="col s4 facebook-single">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
+                                    <div class="wpusb wpusb-default social"id="wpusb-container-default"	data-element-url="<?= the_permalink(); ?>" data-element-title="<?php single_post_title(); ?>"	data-attr-reference="327"	data-attr-nonce="dca75d4f2c"	data-wpusb-component="counter-social-share">
+                                        <div class="wpusb-item wpusb-facebook">
+                                            <a href="https://www.facebook.com/sharer.php?u=<?= the_permalink(); ?>" target="_blank" data-action="open-popup" class="wpusb-button wpusb-btn" rel="nofollow">
+                                                <i class="wpusb-icon-facebook-default "></i>
+                                            </a>
+                                            <span data-element="facebook" class="wpusb-count wpusb-hide"></span>
                                         </div>
-                                        <div class="col s4">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/whatsapp.png"/>
+                                        <div class="wpusb-item wpusb-twitter">
+                                            <a href="https://twitter.com/intent/tweet?url=<?= the_permalink(); ?>" target="_blank" data-action="open-popup"	class="wpusb-button wpusb-btn" rel="nofollow">
+                                                <i class="wpusb-icon-twitter-default"></i>
+                                            </a>
+                                            <span data-element="twitter" class="wpusb-count wpusb-hide"></span>
                                         </div>
-                                        <div class="col s4">
-                                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/twitter.png"/>
+                                        <div class="wpusb-item wpusb-whatsapp">
+                                            <a href="whatsapp://send?text=<?= the_permalink(); ?>" target="_blank" data-action="open-popup"	class="wpusb-button wpusb-btn" rel="nofollow">
+                                                <i class="wpusb-icon-whatsapp-default"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

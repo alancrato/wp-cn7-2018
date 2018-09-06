@@ -131,23 +131,19 @@
             while(have_posts()): the_post();
                 ?>
                 <div class="title-categoria-coluna center ajuste-padding-coluna hide-on-med-and-down">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
-                    </a>
+                    <?php the_title(); ?>
                 </div>
 
                 <div class="title-categoria-coluna ajuste-padding-coluna hide-on-med-and-up">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
-                    </a>
+                    <?php the_title(); ?>
                 </div>
 
                 <div class="content-single">
                     <?php the_content(); ?>
                 </div>
 
-                <div class="row">
-                    <div class="col s12 m3 l3">
+                <!--<div class="row">
+                    <div class="col s12">
                     </div>
                     <div class="col s6 m3 l3">
                         <div class="time-date img-date-coluna">
@@ -158,21 +154,10 @@
                         </div>
                     </div>
                     <div class="col s6 m3 l3">
-                        <div class="row right ajuste-img-coluna ajuste-img-social-mobile">
-                            <div class="col s4 facebook-coluna">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
-                            </div>
-                            <div class="col s4">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/whatsapp.png"/>
-                            </div>
-                            <div class="col s4">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/twitter.png"/>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col s12 m3 l3">
+                    <div class="col s12 m6 l6">
                     </div>
-                </div>
+                </div>-->
 
                 <div class="line-category"></div>
                 <br/>
