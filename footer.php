@@ -51,6 +51,15 @@
 </div>
 <script type="text/javascript" async="async" src="https://tags.premiumads.com.br/dfp/e9919bb9-5ad5-4e04-8b2a-a1d06485f75b"></script>
 
+<!-- Slider -->
+<script>
+    $(document).ready(function(){
+        $('.slider').slider({
+            interval: 10000
+        });
+    });
+</script>
+
 <?php wp_footer();?>
 
 </body>

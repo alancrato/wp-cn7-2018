@@ -17,17 +17,49 @@
     width: 90%;
 }
 
-.slide-topo{
-    text-align: center;
+/*
+    slide
+ */
+
+.slider{
+    height: 91px !important;
+    background-color: transparent !important;
 }
 
-.slide-topo img{
-    width: auto;
-    border-radius: 0;
+.banners{
+    height: 91px !important;
+    background-color: transparent !important;
 }
 
-.slide-topo img:hover{
+.banners .slider{
+    height: 91px !important;
+    background-color: transparent !important;
+}
 
+.slider .slides{
+    width: 728px !important;
+    height: 91px !important;
+    position: relative;
+    background-color: transparent !important;
+    margin: 0 auto;
+}
+
+.slider .indicators{
+    display: none !important;
+    background-color: transparent !important;
+}
+
+.slider .slides li img {
+    border-radius: 0 !important;
+}
+
+
+/*
+    slide mobile
+ */
+
+.slide-mobile {
+    width: 90%;
 }
 
 img{
@@ -303,6 +335,15 @@ nav .nav-search{
     color: black;
 }
 
+.conexao-brasilia{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
 .border-mais-destaques{
     border: 2px solid #f7c341;
     margin-top: 10%;
@@ -422,6 +463,10 @@ nav .nav-search{
 
 .pub-politica{
     width: 100%;
+}
+
+.ajuste-desktop{
+    margin-top: 10%;
 }
 
 .border-politica{

@@ -106,22 +106,17 @@
 
                     <div class="line"></div>
                     <br/>
+                    <br/>
 
-                    <div class="row brasilia">
-                        <div class="col s6 l6">
-                            <div class="mais-destaque">
-                                Conexão Brasília
-                            </div>
+                    <div class="row center hide-on-med-and-down">
+                        <div class="title-publicidade">
+                            Publicidade
                         </div>
-                        <div class="col s6 l6">
-                            <div class="border-mais-destaques"></div>
+                        <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
                         </div>
-                        <div class="mais-destaque-iframe">
-                            <iframe width="99%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/179576144&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
-                            </iframe>
-                        </div>
+                        <br/>
+                        <br/>
                     </div>
-                    <!--<div class="line"></div>-->
 
                 </div>
 
@@ -139,6 +134,18 @@
                     </div>
 
                     <div class="row brasilia">
+                        <div class="col s12">
+                            <div class="conexao-brasilia">
+                                Conexão Brasília - Ceará
+                            </div>
+                        </div>
+                        <div class="mais-destaque-iframe">
+                            <iframe width="99%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/179576144&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!--<div class="row brasilia hide-on-med-and-up">
                         <div class="col s5 l6">
                             <div class="mais-destaque">
                                 Plantão Plus
@@ -148,11 +155,11 @@
                             <div class="border-mais-destaques"></div>
                         </div>
                         <div class="mais-destaque-iframe">
-                            <!--<iframe width="90%" height="180" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/596932029&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-                            </iframe>-->
+                            <iframe width="90%" height="280" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/596932029&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                            </iframe>
                         </div>
                         <div class="line hide-on-med-and-up"></div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>

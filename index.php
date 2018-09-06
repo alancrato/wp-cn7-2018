@@ -27,11 +27,9 @@
     <div class="row hide-on-med-and-down">
         <div class="col s12 m1 l1"></div>
         <div class="col s12 m10 l10">
-            <div class="slide-topo">
-                <a href="https://www.bnb.gov.br/simuladores" target="_blank">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnb.gif" alt="Banco do Nordeste"/>
-                </a>
-            </div>
+            <?php
+                require 'slide.php';
+            ?>
         </div>
         <div class="col s12 m1 l1"></div>
     </div>
@@ -61,10 +59,21 @@
                 <div class="title-publicidade">
                     Publicidade
                 </div>
-                <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_4" data-sizes="[[300,250]]" data-device="mobile">
+                <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_2" data-sizes="[[300,250]]" data-device="mobile">
                 </div>
                 <br/>
                 <div class="line"></div>
+                <br/>
+                <div class="title-publicidade">
+                    Publicidade
+                </div>
+                <div class="slide-mobile center">
+                    <a href="https://www.maracanau.ce.gov.br/" target="_blank">
+                        <img src="<?php echo home_url();?>/wp-content/uploads/upa-maracanau-01.png">
+                    </a>
+                </div>
+                <div class="line"></div>
+                <br/>
             </div>
         </div>
     </div>
@@ -82,7 +91,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col m3 l3 hide-on-med-and-down">
+        <div class="col m3 l3 hide-on-med-and-down ">
             <div class="title-publicidade center">
                 Publicidade
             </div>
@@ -141,8 +150,9 @@
                 <div class="title-publicidade center">
                     Publicidade
                 </div>
-                <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_3" data-sizes="[[728,90]]" data-device="desktop">
-                </div>
+                <?php
+                    require 'slide2.php';
+                ?>
             </div>
             <div class="hide-on-med-and-up ajuste-line-tuto">
                 <div class="title-publicidade center">
