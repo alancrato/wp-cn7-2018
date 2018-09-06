@@ -67,7 +67,11 @@
             <div class="title-publicidade center">
                 Publicidade
             </div>
-            <div class="pub-category"></div>
+            <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
+            </div>
+            <br/>
+            <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
+            </div>
             <br/>
             <div class="line-sidebar-category"></div>
             <br/>

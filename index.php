@@ -128,9 +128,14 @@
                     <div class="border-cariri"></div>
                 </div>
                 <div class="col s12">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/jc.png"/>
+                    <a href="https://issuu.com/cearanews7/docs/jc-04a10setembro2018" target="_blank">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/jornal.jpg"/>
+                    </a>
                     <div class="line"></div>
                     <br/>
+                    <div class="anuncio hide-on-med-and-down">
+                      <!-- Anúncio Cariri -->
+                    </div>
                 </div>
             </div>
         </div>

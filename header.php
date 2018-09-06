@@ -99,7 +99,7 @@
                     <li><a href="<?php echo home_url('/');?>ultimas-noticias">Últimas</a></li>
                     <li><a href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
                     <li><a href="<?php echo home_url('/');?>contato">Contato</a></li>
-                    <li><a href="http://www.jornaldocariri.com.br" target="_blank">Jornal do Cariri</a></li>
+                    <li><a href="https://issuu.com/cearanews7/docs/jc-04a10setembro2018" target="_blank">Jornal do Cariri</a></li>
                     <li><a href="http://www.plusfm.com.br" target="_blank">Plus Fm</a></li>
                 </ul>
             </div>
@@ -128,7 +128,7 @@
                 </a>
             </div>
             <div class="col s4">
-                <i class="material-icons right search">search</i>
+                <i class="material-icons right search search-icon">search</i>
             </div>
         </div>
 
@@ -151,3 +151,17 @@
         </ul>
     </div>
 </nav>
+
+<div class="row hide-on-med-and-up search-mobile">
+    <nav class="black nav-search">
+        <div class="nav-wrapper">
+            <form action="<?php echo home_url('/');?>" method="get">
+                <div class="input-field">
+                    <input id="search" name="s" value="<?php echo get_search_query();?>" type="search" placeholder="PESQUISAR" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>

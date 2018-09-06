@@ -53,6 +53,14 @@
     border-radius: 0 !important;
 }
 
+/*
+    search mobile
+ */
+
+.search-mobile{
+    display: none;
+}
+
 
 /*
     slide mobile
