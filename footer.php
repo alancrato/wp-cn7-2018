@@ -51,6 +51,14 @@
 </div>
 <script type="text/javascript" async="async" src="https://tags.premiumads.com.br/dfp/e9919bb9-5ad5-4e04-8b2a-a1d06485f75b"></script>
 
+<!-- Modal -->
+<script>
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+    });
+</script>
+
 <!-- Slider -->
 <script>
     $(document).ready(function(){
@@ -66,6 +74,9 @@
         $('.search-mobile').css("display", "block");
     })
 </script>
+
+<!-- Script Tags Alright Links Patrocinados -->
+<script type="text/javascript">   window._taboola = window._taboola || [];   _taboola.push({flush: true}); </script>
 
 <?php wp_footer();?>
 

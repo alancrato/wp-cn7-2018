@@ -28,7 +28,40 @@
 
         ga('create', 'UA-68631515-1', 'auto');
         ga('send', 'pageview');
+    </script>
 
+    <!--Script Teads-->
+    <script src="//media.aso1.net/js/tags/alright.js"></script>
+    <!--Script Teads SURF -->
+    <script src="https://mona.admanmedia.com/go?id=efe8ea79" id="hybs-efe8ea79" async></script>
+
+    <!-- Script Tags Alright Links Patrocinados -->
+    <script type="text/javascript">
+        window._taboola = window._taboola || []; _taboola.push({article:'auto'});
+        !function (e, f, u, i) {
+            if (!document.getElementById(i)){
+                e.async = 1;e.src = u;e.id = i;f.parentNode.insertBefore(e, f);
+            }
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],   '//cdn.taboola.com/libtrc/alright-cearanews7/loader.js',   'tb_loader_script');
+        if(window.performance && typeof window.performance.mark == 'function') {
+            window.performance.mark('tbl_ic');
+        }
+
+        <!-- Insert new Alright date tags 2018/08/09 -->
+        window._seedtagq = window._seedtagq || [];
+        window._seedtagq.push(['_setId', '3520-3366-01']);
+        window._seedtagq.push(['iframe_mode']);
+        (function () {
+            var st = document.createElement('script');
+            st.type = 'text/javascript';
+            st.async = true;
+            st.src = ('https:' == document.location.protocol
+                    ? 'https'
+                    : 'http') + '://config.seedtag.com/loader.js?v=' + Math.random();
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(st, s);
+        })();
     </script>
 
     <?php wp_head(); ?>
