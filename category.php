@@ -57,8 +57,11 @@
                         <div class="btn-small ajuste-title-colunista">
                             Fernando Ribeiro
                         </div>
-                        <div class="title-coluna">
+                        <div class="title-coluna hide-on-med-and-down">
                             Jornalista cearense, blogueiro, comentarista, colunista, especialista em segurança pública, atua no jornalismo policial realizando a cobertura do dia a dia da violência e da criminalidade no estado do ceará, com matérias amplas de fatos do cotidiano e reportagens especiais abrangendo também o judiciário local.
+                        </div>
+                        <div class="title-coluna hide-on-med-and-up">
+                            Jornalista cearense, blogueiro, comentarista, colunista, especialista em segurança pública
                         </div>
                         <?php
                     }
@@ -127,7 +130,13 @@
          if(have_posts()):
             while(have_posts()): the_post();
                 ?>
-                <div class="title-categoria-coluna center ajuste-padding-coluna">
+                <div class="title-categoria-coluna center ajuste-padding-coluna hide-on-med-and-down">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </div>
+
+                <div class="title-categoria-coluna ajuste-padding-coluna hide-on-med-and-up">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
@@ -186,6 +195,9 @@
                     </div>
                     <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
                     </div>
+                    <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_3" data-sizes="[[300,250]]" data-device="mobile">
+                    </div>
+                    <br/>
                     <div class="line-sidebar-category"></div>
                     <br/>
                     <div class="facebook-page center hide-on-med-and-down">
@@ -279,6 +291,8 @@
                 </div>
                 <!-- Bloco 01 Premmium -->
                 <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_2" data-sizes="[[300,600]]" data-device="desktop">
+                </div>
+                <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_3" data-sizes="[[300,250]]" data-device="mobile">
                 </div>
 
                 <br/>

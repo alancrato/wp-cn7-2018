@@ -138,15 +138,6 @@
                         <br/>
                     </div>
 
-                    <div class="row center hide-on-med-and-up float-mais-principal-mobile">
-                        <div class="title-publicidade">
-                            Publicidade
-                        </div>
-                        <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_2" data-sizes="[[300,250]]" data-device="desktop">
-                        </div>
-                    </div>
-                    <div class="line hide-on-med-and-up"></div>
-
                     <div class="row brasilia">
                         <div class="col s5 l6">
                             <div class="mais-destaque">
@@ -160,8 +151,8 @@
                             <iframe width="90%" height="180" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/596932029&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
                             </iframe>
                         </div>
+                        <div class="line hide-on-med-and-up"></div>
                     </div>
-                    <!--<div class="line"></div>-->
 
                 </div>
             </div>

@@ -44,7 +44,7 @@
 <div class="container">
     <div class="row center">
         <div class="col s12 m12 l12">
-            <div class="title-publicidade">
+            <div class="title-publicidad hide-on-med-and-down">
                 Publicidade
             </div>
             <div class="hide-on-med-and-down">
@@ -82,11 +82,11 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12 m3 l3">
+        <div class="col m3 l3 hide-on-med-and-down">
             <div class="title-publicidade center">
                 Publicidade
             </div>
-            <div class="pub-politica center hide-on-med-and-down">
+            <div class="pub-politica center">
                 <!-- single -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:160px;height:600px"
@@ -96,22 +96,8 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <br/>
-            <div class="publicidade-quadrada-politica center">
-                <!-- Bloco Index Política 2 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:120px;height:240px"
-                     data-ad-client="ca-pub-9443599461482101"
-                     data-ad-slot="7838257843"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            <br/>
-            <div class="line"></div>
-
         </div>
-        <div class="col s12 m9 l9">
+        <div class="col m9 l9">
             <?php
                 require 'politica.php';
                 require 'policia.php';
@@ -150,7 +136,7 @@
 <div class="container">
     <div class="row">
         <div class="col s12 m1 l1"></div>
-        <div class="col s12 m10 l10">
+        <div class="col s12 m10 l10 ajuste-interior-esporte">
             <div class="pub-top hide-on-med-and-down">
                 <div class="title-publicidade center">
                     Publicidade
@@ -175,7 +161,7 @@
 <div class="container">
     <div class="row">
         <?php
-        require 'interior-esporte.php';
+            require 'interior-esporte.php';
         ?>
     </div>
 </div>
@@ -183,7 +169,7 @@
 <div class="container">
     <div class="row">
         <div class="col s12 m1 l1"></div>
-        <div class="col s12 m10 l10">
+        <div class="col s12 m10 l10 ajuste-tudo">
             <div class="pub-top hide-on-med-and-down">
                 <div class="title-publicidade center">
                     Publicidade
@@ -191,7 +177,7 @@
                 <div data-premium data-adunit="CEARA_NEWS_DESKTOP_HOME_4" data-sizes="[[728,90]]" data-device="desktop">
                 </div>
             </div>
-            <div class="hide-on-med-and-up ajuste-line-tuto">
+            <div class="hide-on-med-and-up">
                 <div class="title-publicidade center">
                     Publicidade
                 </div>

@@ -116,7 +116,7 @@
                                         <?php the_time('d/m G:i'); ?>
                                     </div>
                                 </div>
-                                <div class="col s6 m5 l5">
+                                <div class="col s6 m3 l3">
                                     <div class="row right ajuste-img-social-mobile">
                                         <div class="col s4 facebook-single">
                                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/facebook.png"/>
@@ -129,7 +129,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col s12 m4 l4"></div>
+                                <div class="col s12 m6 l6"></div>
                             </div>
                         </div>
                     <?php
@@ -223,13 +223,13 @@
                     <div class="line"></div>
                     <br/>
                     <div class="row">
-                        <div class="col s7 m6 l6">
+                        <div class="col s6 m6 l6">
                             <div class="mais-destaque">
                                 Mais Lidas de Hoje
                             </div>
                         </div>
-                        <div class="col s5 m6 l6">
-                            <div class="border-mais-destaques"></div>
+                        <div class="col s6 m6 l6">
+                            <div class="border-mais-lidas-single"></div>
                         </div>
                     </div>
 
@@ -240,7 +240,7 @@
                                     <?php
                                         for($i = 1; $i <= 5; $i++){
                                             $result = $i;
-                                            echo "<h3 class='number-single'>$result °</h3>";
+                                            echo "<h3 class='number-single'>$result</h3>";
                                         }
                                     ?>
                                 </div>

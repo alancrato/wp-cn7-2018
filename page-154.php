@@ -40,7 +40,7 @@
                     <div class="col s12">
                         <div class="left-align">
                             <button class="btn-large single waves-effect waves-light" type="submit" name="action">ENVIAR
-                                <i class="material-icons right">send</i>
+                                <i class="material-icons right seta">send</i>
                             </button>
                         </div>
                     </div>

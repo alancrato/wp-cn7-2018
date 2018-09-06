@@ -11,31 +11,67 @@
         <?php
             if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
         ?>
-            <div class="btn-small">
-                <?php
+
+            <div class="hide-on-med-and-down">
+                <div class="btn-small">
+                    <?php
                     $cartola = get_field( "cartola" );
                     if( $cartola ){
                         echo $cartola;
                     }else{
                         echo ' ';
                     }
-                ?>
-            </div>
-            <div class="title padding-ajustes">
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?>
-                </a>
-            </div>
-            <div class="bigode">
-                <?php
+                    ?>
+                </div>
+                <div class="title padding-ajustes">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </div>
+                <div class="bigode">
+                    <?php
                     $bigode = get_field( "bigode" );
                     if( $bigode ){
                         echo $bigode;
                     }else{
                         echo ' ';
                     }
-                ?>
+                    ?>
+                </div>
             </div>
+
+            <div class="hide-on-med-and-up">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="btn-small">
+                            <?php
+                            $cartola = get_field( "cartola" );
+                            if( $cartola ){
+                                echo $cartola;
+                            }else{
+                                echo ' ';
+                            }
+                            ?>
+                        </div>
+                        <div class="title padding-ajustes">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </div>
+                        <div class="bigode">
+                            <?php
+                            $bigode = get_field( "bigode" );
+                            if( $bigode ){
+                                echo $bigode;
+                            }else{
+                                echo ' ';
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         <?php
             endwhile;
         else : ?>

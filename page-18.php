@@ -1,16 +1,27 @@
 <?php get_header();?>
 
-<br/>
-<div class="container">
-
-    <div class="row hide-on-med-and-down">
-        <div class="col s12 m1 l1"></div>
-        <div class="col s12 m10 l10">
-            <div class="pub-top"></div>
+<div class="submenu-nav hide-on-med-and-up">
+    <div class="container">
+        <div class="row">
+            <div class="col s4">
+                <a href="<?php echo home_url('/');?>">
+                    Destaques
+                </a>
+            </div>
+            <div class="col s4">
+                <a href="<?php echo home_url('/');?>mais-lidas">
+                    Mais Lidas
+                </a>
+            </div>
+            <div class="col s4">
+                <a href="<?php echo home_url('/');?>colunas">
+                    Colunas
+                </a>
+            </div>
         </div>
-        <div class="col s12 m1 l1"></div>
     </div>
 </div>
+<br/>
 
 <div class="container">
     <div class="row float-category">
@@ -60,17 +71,30 @@
                         </a>
                     </div>
                     <div class="col s12 m8 l8">
-                        <div class="time-date time-date-category">
+                        <div class="time-date-category time-date-category">
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
                         </div>
                         <div class="date-single">
                             <?php the_time('d/m G:i'); ?>
                         </div>
-                        <div class="title-category ajuste-ultimas">
+                        <div class="title-category padding-ajustes">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?>
                             </a>
                         </div>
+                        <div class="bigode-category">
+                            <?php
+                            $bigode = get_field( "bigode" );
+                            if( $bigode ){
+                                echo $bigode;
+                            }else{
+                                echo ' ';
+                            }
+                            ?>
+                        </div>
+                        <br/>
+                        <div class="line-category"></div>
+                        <br/>
                     </div>
                 </div>
             <?php
@@ -85,11 +109,16 @@
             wp_reset_postdata();?>
 
             <div class="center">
+                <?php
+                    if(wordpress_pagination()){
+                ?>
                 <?php wordpress_pagination(); ?>
+                    <div class="line-category"></div>
+                    <br/>
+                <?php
+                    }
+                ?>
             </div>
-
-            <div class="line-category"></div>
-            <br/>
         </div>
         <div class="col s12 m4 l4">
 
@@ -127,9 +156,10 @@
             <div class="title-publicidade center">
                 Publicidade
             </div>
-
             <!-- Bloco 01 Premmium -->
             <div data-premium data-adunit="CEARA_NEWS_DESKTOP_INTERNA_LATERAL_2" data-sizes="[[300,600]]" data-device="desktop">
+            </div>
+            <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_3" data-sizes="[[300,250]]" data-device="mobile">
             </div>
 
             <br/>
