@@ -21,6 +21,13 @@
     float: left;
 }
 
+.wpsdc-drop-cap {
+    padding: 0;
+    font-size: 5em;
+    line-height: 0.8em;
+    color: black;
+}
+
 /*
     slide
  */
