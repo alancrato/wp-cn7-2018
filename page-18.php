@@ -48,12 +48,12 @@
 
             <?php
                 $cat = array(
-                    'donizete-arruda' => 13,
-                    'fernando-ribeiro' => 15,
-                    'pastor-jecer-goes' => 39,
-                    'madson-vagner' => 44,
-                    'raphael-barros' => 16,
-                    'roberto-pires' => 40,
+                    'donizete-arruda' => 2239,
+                    'fernando-ribeiro' => 2240,
+                    'pastor-jecer-goes' => 2243,
+                    'madson-vagner' => 2273,
+                    'raphael-barros' => 2241,
+                    'roberto-pires' => 2242,
                 );
                 $categories = get_the_category();
                 $result = $categories[0]->term_id;
