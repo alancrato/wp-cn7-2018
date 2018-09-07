@@ -119,10 +119,9 @@
                     <li><a href="<?php echo home_url('/');?>categoria/policia">Polícia</a></li>
                     <li><a href="<?php echo home_url('/');?>categoria/interior">Interior</a></li>
                     <li><a href="<?php echo home_url('/');?>categoria/esportes">Esportes</a></li>
-                    <li><a href="<?php echo home_url('/');?>categoria/tudo">De Tudo</a></li>
+                    <li><a href="<?php echo home_url('/');?>categoria/tudo">De tudo</a></li>
                     <li class="divider"></li>
                     <li><a href="<?php echo home_url('/');?>categoria/observatorio-justica">Observatório Justiça</a></li>
-                    <li><a href="<?php echo home_url('/');?>">Mais Que Coisa</a></li>
                 </ul>
                 <ul class="center">
                     <li><a class="active" href="<?php echo home_url('/');?>">Destaques</a></li>
@@ -133,7 +132,7 @@
                     <li><a href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
                     <li><a href="<?php echo home_url('/');?>contato">Contato</a></li>
                     <li><a href="https://issuu.com/cearanews7/docs/jc-04a10setembro2018" target="_blank">Jornal do Cariri</a></li>
-                    <li><a href="http://www.plusfm.com.br" target="_blank">Plus Fm</a></li>
+                    <li><a href="http://www.plusfm.com.br" target="_blank">Plus FM</a></li>
                 </ul>
             </div>
             <div class="col s12 m3 l3">
@@ -171,15 +170,15 @@
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo-menu.png"/>
                 </div>
             </li>
-            <li><a href="<?php echo home_url('/');?>ultimas-noticias">Últimas Notícias</a></li>
+            <li><a href="<?php echo home_url('/');?>ultimas-noticias">Últimas notícias</a></li>
             <li><a href="<?php echo home_url('/');?>">Destaques</a></li>
-            <li><a href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
+            <li><a href="<?php echo home_url('/');?>mais-lidas">Mais lidas</a></li>
             <li><a href="<?php echo home_url('/');?>colunas">Colunas</a></li>
             <li><a href="<?php echo home_url('/');?>categoria/politica">Política</a></li>
             <li><a href="<?php echo home_url('/');?>categoria/policia">Polícia</a></li>
             <li><a href="<?php echo home_url('/');?>categoria/interior">Interior</a></li>
             <li><a href="<?php echo home_url('/');?>categoria/esportes">Esportes</a></li>
-            <li><a href="<?php echo home_url('/');?>categoria/tudo">De Tudo</a></li>
+            <li><a href="<?php echo home_url('/');?>categoria/tudo">De tudo</a></li>
             <li><a href="<?php echo home_url('/');?>categoria/observatorio-justica">Observatório Justiça</a></li>
         </ul>
     </div>
