@@ -22,7 +22,7 @@
 }
 
 .wpsdc-drop-cap {
-    color: black !important;
+    color: #f7c341 !important;
 }
 
 /*
@@ -737,6 +737,15 @@ blockquote {
     font-size: 1.4em;
     font-weight: 400;
     color: #333;
+}
+
+.content-single a{
+    color: #f7c341;
+    font-weight: 500;
+}
+
+.content-single strong{
+    font-weight: bold;
 }
 
 .single{
