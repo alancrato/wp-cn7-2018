@@ -38,7 +38,8 @@
                 $query = new WP_Query( array(
                     'posts_per_page' => 20,
                     'order' => 'DESC',
-                    'orderBy' => 'ID'
+                    'orderBy' => 'ID',
+                    'month' => date( 'm')
                 ));
             ?>
 
