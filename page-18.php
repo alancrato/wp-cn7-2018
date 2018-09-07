@@ -39,7 +39,7 @@
                     'posts_per_page' => 20,
                     'order' => 'DESC',
                     'orderBy' => 'ID',
-                    'month' => date( 'm')
+                    'month' => date( 'M')
                 ));
             ?>
 
