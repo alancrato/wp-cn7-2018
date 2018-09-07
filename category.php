@@ -19,12 +19,12 @@
     $result = $categories[0]->term_id;
 
     $cat = array(
-       'donizete-arruda' => 13,
-       'fernando-ribeiro' => 15,
-       'pastor-jecer-goes' => 39,
-       'madson-vagner' => 44,
-       'raphael-barros' => 16,
-       'roberto-pires' => 40,
+       'donizete-arruda' => 2239,
+       'fernando-ribeiro' => 2240,
+       'pastor-jecer-goes' => 2243,
+       'madson-vagner' => 2273,
+       'raphael-barros' => 2241,
+       'roberto-pires' => 2242,
     );
 
     if(in_array($result,$cat)){
@@ -37,7 +37,7 @@
                 <div class="ajuste-colunista">
 
                     <?php
-                        if($result == 13){
+                        if($result == 2239){
                     ?>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_01@2x.png"/>
                         <div class="btn-small ajuste-title-colunista">
@@ -51,7 +51,7 @@
                     ?>
 
                     <?php
-                    if($result == 15){
+                    if($result == 2240){
                         ?>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_02@2x.png"/>
                         <div class="btn-small ajuste-title-colunista">
@@ -68,7 +68,7 @@
                     ?>
 
                     <?php
-                    if($result == 39){
+                    if($result == 2243){
                         ?>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_03@2x.png"/>
                         <div class="btn-small">
@@ -82,7 +82,7 @@
                     ?>
 
                     <?php
-                    if($result == 44){
+                    if($result == 2273){
                         ?>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_04@2x.png"/>
                         <div class="btn-small">
@@ -96,7 +96,7 @@
                     ?>
 
                     <?php
-                    if($result == 16){
+                    if($result == 2241){
                         ?>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_05@2x.png"/>
                         <div class="btn-small">
@@ -109,7 +109,7 @@
                     }
                     ?>
                     <?php
-                        if($result == 40){
+                        if($result == 2242){
                             ?>
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/colunas/home_06@2x.png"/>
                             <div class="btn-small">
