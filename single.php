@@ -117,7 +117,7 @@
                     ?>
                         <div class="autor-date-social">
                             <div class="row">
-                                <div class="col s6 m3 l3">
+                                <div class="col s6 m4 l4">
                                     <div class="time-date">
                                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
                                     </div>
@@ -125,7 +125,7 @@
                                         <?php the_time('d/m G:i'); ?>
                                     </div>
                                 </div>
-                                <div class="col s6 m3 l3">
+                                <div class="col s6 m4 l4">
                                     <div class="wpusb wpusb-default social"id="wpusb-container-default"	data-element-url="<?= the_permalink(); ?>" data-element-title="<?php single_post_title(); ?>"	data-attr-reference="327"	data-attr-nonce="dca75d4f2c"	data-wpusb-component="counter-social-share">
                                         <div class="wpusb-item wpusb-facebook">
                                             <a href="https://www.facebook.com/sharer.php?u=<?= the_permalink(); ?>" target="_blank" data-action="open-popup" class="wpusb-button wpusb-btn" rel="nofollow">
@@ -146,7 +146,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col s12 m6 l6"></div>
+                                <div class="col s12 m4 l4"></div>
                             </div>
                         </div>
                     <?php

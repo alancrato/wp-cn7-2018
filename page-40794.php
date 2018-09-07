@@ -42,17 +42,6 @@
     <div class="row float-category">
         <div class="col s12 m8 l8">
 
-            <!--<div class="row">
-                <div class="col s4">
-                    <div class="mais-destaque padding-ajustes-mais-lidas">
-                        Mais Lidas de Hoje
-                    </div>
-                </div>
-                <div class="col s8">
-                    <div class="border-mais-destaques"></div>
-                </div>
-            </div>-->
-
             <?php
             $args = array(
                 'range' => 'last24hours',
