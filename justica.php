@@ -64,6 +64,7 @@
                 <?php
                     $query = new WP_Query( array(
                         'posts_per_page' => 3,
+                        'offset' => 1,
                         'category_name' => 'observatorio-justica',
                         'order' => 'DESC',
                         'orderBy' => 'ID'
