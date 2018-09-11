@@ -128,7 +128,7 @@
                     <div class="border-cariri"></div>
                 </div>
                 <div class="col s12">
-                    <a href="https://issuu.com/cearanews7/docs/jc-04a10setembro2018" target="_blank">
+                    <a href="https://issuu.com/cearanews7/docs/jc-11a17setembro2018" target="_blank">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/jornal.jpg"/>
                     </a>
                     <div class="line"></div>

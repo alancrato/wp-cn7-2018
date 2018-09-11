@@ -11,7 +11,7 @@
                     <li><a class="black-text" href="<?php echo home_url('/');?>ultimas-noticias">Últimas</a></li>
                     <li><a class="black-text" href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
                     <li><a class="black-text" href="<?php echo home_url('/');?>contato">Contato</a></li>
-                    <li><a class="black-text" href="https://issuu.com/cearanews7/docs/jc-04a10setembro2018" target="_blank">Jornal do Cariri</a></li>
+                    <li><a class="black-text" href="https://issuu.com/cearanews7/docs/jc-11a17setembro2018" target="_blank">Jornal do Cariri</a></li>
                     <li><a class="black-text" href="http://www.plusfm.com.br" target="_blank">Plus Fm</a></li>
                 </ul>
             </div>
