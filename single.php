@@ -155,6 +155,18 @@
 
                     <div class="content-single">
                         <?php the_content(); ?>
+                        <!-- Script Teads (vídeo)  -->
+                        <script type="text/javascript" class="teads" async="true" src="//a.teads.tv/page/82627/tag"></script>
+                        <!-- Novo Script Anúncio Single-->
+                        <?php if ($_GET['video'] == 'exibe') { ?>
+                            <script type="text/javascript">
+                                var p='68005'; var e='smartIntext';
+                                var t='//des.smartclip.net/ads?type=dyn&sz=400x320';t+='&plc='+p;t+='&elementId='+e;
+                                t+='&ref='+encodeURIComponent(window.top.document.URL);t+='&rnd='+Math.round(Math.random()*1e8);
+                                var s=document.createElement('script');s.type='text/javascript';s.src=t;document.body.appendChild(s);
+                            </script>
+                            <div id="smartIntext"></div>
+                        <?php } ?>
                     </div>
 
                     <div class="line"></div>
@@ -368,9 +380,9 @@
                 </div>
                 <div class="col s12 m9 l9"></div>
                 <div class="col s12">
-                    <!--<br/>
-                    *Links Patrocinado
-                    -->
+                    <br/>
+                    <div id="taboola-below-article-thumbnails"></div>
+                    <script type="text/javascript">   window._taboola = window._taboola || [];   _taboola.push({     mode: 'thumbnails-a',     container: 'taboola-below-article-thumbnails',     placement: 'Below Article Thumbnails',     target_type: 'mix'   }); </script>
                 </div>
             </div>
         </div>
