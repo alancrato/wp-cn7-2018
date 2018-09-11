@@ -142,23 +142,6 @@
                     <?php the_content(); ?>
                 </div>
 
-                <!--<div class="row">
-                    <div class="col s12">
-                    </div>
-                    <div class="col s6 m3 l3">
-                        <div class="time-date img-date-coluna">
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/social/single/time.png"/>
-                        </div>
-                        <div class="date-single">
-                            <?php the_time('d/m G:i'); ?>
-                        </div>
-                    </div>
-                    <div class="col s6 m3 l3">
-                    </div>
-                    <div class="col s12 m6 l6">
-                    </div>
-                </div>-->
-
                 <div class="line-category"></div>
                 <br/>
 

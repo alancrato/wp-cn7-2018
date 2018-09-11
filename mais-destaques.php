@@ -145,22 +145,6 @@
                         </div>
                     </div>
 
-                    <!--<div class="row brasilia hide-on-med-and-up">
-                        <div class="col s5 l6">
-                            <div class="mais-destaque">
-                                Plantão Plus
-                            </div>
-                        </div>
-                        <div class="col s7 l6">
-                            <div class="border-mais-destaques"></div>
-                        </div>
-                        <div class="mais-destaque-iframe">
-                            <iframe width="90%" height="280" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/596932029&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-                            </iframe>
-                        </div>
-                        <div class="line hide-on-med-and-up"></div>
-                    </div>-->
-
                 </div>
             </div>
         </div>

@@ -88,7 +88,7 @@
             </div>
             <div class="gif-bnb-mobile">
                 <a href="https://www.bnb.gov.br/simuladores" target="_blank">
-                    <img src="<?php echo home_url();?>/wp-content/uploads/bnbMobile.gif" width="100%" alt="Banco do Nordeste"/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnbMobile.gif" width="100%" alt="Banco do Nordeste"/>
                 </a>
             </div>
             <br/>

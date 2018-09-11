@@ -171,7 +171,6 @@
             </div>
             <div data-premium data-adunit="CEARA_NEWS_MOBILE_HOME_3" data-sizes="[[300,250]]" data-device="mobile">
             </div>
-
             <br/>
             <div class="line-sidebar-category"></div>
             <br/>
@@ -189,6 +188,19 @@
             </div>
             <br/>
             <div class="line-sidebar-category hide-on-med-and-down"></div>
+            <br/>
+            <div class="title-publicidade center">
+                Publicidade
+            </div>
+            <!-- Caucaia Mobile -->
+            <div class="center">
+                <a href="https://www.caucaia.ce.gov.br" target="_blank">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/caucaia-mobile.png" width="100%" title="Prefeitura de Caucaia">
+                </a>
+            </div>
+            <br/>
+            <div class="line-sidebar-category"></div>
+            <br/>
         </div>
     </div>
 </div>

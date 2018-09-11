@@ -55,7 +55,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="hide-on-med-and-up center">
+            <div class="hide-on-med-and-up">
                 <div class="title-publicidade">
                     Publicidade
                 </div>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="slide-mobile">
                     <a href="https://www.maracanau.ce.gov.br/" target="_blank">
-                        <img src="<?php echo home_url();?>/wp-content/uploads/upa-maracanau-01.png">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/upa-maracanau-01.png">
                     </a>
                 </div>
                 <div class="line"></div>

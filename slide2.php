@@ -7,7 +7,7 @@
         </li>
         <li>
             <a href="https://www.acalantofortaleza.com.br/" target="_blank">
-                <img src="<?php echo home_url();?>/wp-content/uploads/ong.png" alt="Acalanto Fortaleza"/>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/ong.png" alt="Acalanto Fortaleza"/>
             </a>
         </li>
         <li>
