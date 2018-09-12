@@ -12,37 +12,35 @@
                 </div>
             </div>
             <div class="ajuste-card-mobile"></div>
+
             <?php
-                $query = new WP_Query( array(
-                    'posts_per_page' => 3,
-                    'category_name' => 'mais-destaques',
-                    'order' => 'DESC',
-                    'orderBy' => 'ID'
-                ));
-            ?>
-            <?php
-                if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-            ?>
+            $the_query = new WP_Query(array(
+                'category_name' => 'mais-destaques',
+                'posts_per_page' => '3',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <div class="row">
                     <div class="card">
                         <div class="card-image">
                             <a href="<?php the_permalink(); ?>">
                                 <?php
-                                    if (has_post_thumbnail()) {
-                                        the_post_thumbnail('custom-size');
-                                    }
+                                if (has_post_thumbnail()) {
+                                    the_post_thumbnail('custom-size');
+                                }
                                 ?>
                             </a>
                             <div class="card-container">
                                 <div class="row">
                                     <div class="btn-small bigode-mais-destaques">
                                         <?php
-                                            $cartola = get_field( "cartola" );
-                                            if( $cartola ){
-                                                echo $cartola;
-                                            }else{
-                                                echo ' ';
-                                            }
+                                        $cartola = get_field( "cartola" );
+                                        if( $cartola ){
+                                            echo $cartola;
+                                        }else{
+                                            echo ' ';
+                                        }
                                         ?>
                                     </div>
                                 </div>
@@ -57,11 +55,8 @@
                 </div>
             <?php
                 endwhile;
-            else : ?>
-                <p><?php _e('Aguardando Publicações.'); ?></p>
-            <?php endif;
-            wp_reset_postdata();?>
-
+                wp_reset_postdata();
+            ?>
         </div>
         <div class="line"></div>
     </div>
@@ -70,24 +65,21 @@
             <div class="row float-mais-principal-mobile-right">
                 <div class="col s12 m6 l6">
                     <?php
-                        $query = new WP_Query( array(
-                            'posts_per_page' => 3,
-                            'category_name' => 'mais-destaques-right',
-                            'order' => 'DESC',
-                            'orderBy' => 'ID'
-                        ));
-                        ?>
-                    <?php
-                        if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                    ?>
+                    $the_query = new WP_Query(array(
+                        'category_name' => 'mais-destaques-right',
+                        'posts_per_page' => '3',
+                        'order' => 'DESC',
+                        'orderBy' => 'ID'
+                    ));
+                    while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <div class="retranca-destaque-right padding-ajustes">
                             <?php
-                                $cartola = get_field( "cartola" );
-                                if( $cartola ){
-                                    echo $cartola;
-                                }else{
-                                    echo ' ';
-                                }
+                            $cartola = get_field( "cartola" );
+                            if( $cartola ){
+                                echo $cartola;
+                            }else{
+                                echo ' ';
+                            }
                             ?>
                         </div>
                         <div class="tittle-mais-destaque-right">
@@ -96,14 +88,10 @@
                             </a>
                         </div>
                         <br/>
-
                     <?php
                         endwhile;
-                    else : ?>
-                        <p><?php _e('Aguardando Publicações.'); ?></p>
-                    <?php endif;
-                    wp_reset_postdata();?>
-
+                    wp_reset_postdata();
+                    ?>
                     <div class="line"></div>
                     <br/>
                     <br/>

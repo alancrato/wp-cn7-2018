@@ -8,24 +8,20 @@
             Donizete Arruda
         </div>
         <div class="title-coluna">
-            <?php
-                $query = new WP_Query( array(
-                    'posts_per_page' => 1,
-                    'category_name' => 'donizete-arruda',
-                    'order' => 'DESC',
-                    'orderBy' => 'ID'
-                ));
 
-                if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                ?>
-                    <a href="<?php echo home_url('/');?>categoria/coluna/donizete-arruda">
-                        <?php the_title(); ?>
-                    </a>
-                <?php
-                    endwhile;
-                else :
-                    _e('Aguardando Publicações.');
-                endif;
+            <?php
+            $the_query = new WP_Query(array(
+                'category_name' => 'donizete-arruda',
+                'posts_per_page' => '1',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                <a href="<?php echo home_url('/');?>categoria/coluna/donizete-arruda">
+                    <?php the_title(); ?>
+                </a>
+            <?php
+                endwhile;
                 wp_reset_postdata();
             ?>
         </div>
@@ -40,23 +36,18 @@
         </div>
         <div class="title-coluna">
             <?php
-            $query = new WP_Query( array(
-                'posts_per_page' => 1,
+            $the_query = new WP_Query(array(
                 'category_name' => 'fernando-ribeiro',
+                'posts_per_page' => '1',
                 'order' => 'DESC',
                 'orderBy' => 'ID'
             ));
-
-            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                ?>
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <a href="<?php echo home_url('/');?>categoria/coluna/fernando-ribeiro">
                     <?php the_title(); ?>
                 </a>
-                <?php
-            endwhile;
-            else :
-                _e('Aguardando Publicações.');
-            endif;
+            <?php
+                endwhile;
             wp_reset_postdata();
             ?>
         </div>
@@ -69,24 +60,20 @@
             Pastor Jecer Goes
         </div>
         <div class="title-coluna">
+
             <?php
-            $query = new WP_Query( array(
-                'posts_per_page' => 1,
+            $the_query = new WP_Query(array(
                 'category_name' => 'pastor-jecer-goes',
+                'posts_per_page' => '1',
                 'order' => 'DESC',
                 'orderBy' => 'ID'
             ));
-
-            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                ?>
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <a href="<?php echo home_url('/');?>categoria/coluna/pastor-jecer-goes">
                     <?php the_title(); ?>
                 </a>
-                <?php
-            endwhile;
-            else :
-                _e('Aguardando Publicações.');
-            endif;
+            <?php
+                endwhile;
             wp_reset_postdata();
             ?>
         </div>
@@ -100,22 +87,18 @@
         </div>
         <div class="title-coluna">
             <?php
-                $query = new WP_Query( array(
-                    'posts_per_page' => 1,
-                    'category_name' => 'madson-vagner',
-                    'order' => 'DESC',
-                    'orderBy' => 'ID'
-                ));
-            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                ?>
+            $the_query = new WP_Query(array(
+                'category_name' => 'madson-vagner',
+                'posts_per_page' => '1',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <a href="<?php echo home_url('/');?>categoria/coluna/madson-vagner">
                     <?php the_title(); ?>
                 </a>
-                <?php
-            endwhile;
-            else :
-                _e('Aguardando Publicações.');
-            endif;
+            <?php
+                endwhile;
             wp_reset_postdata();
             ?>
         </div>
@@ -129,22 +112,18 @@
         </div>
         <div class="title-coluna">
             <?php
-                $query = new WP_Query( array(
-                    'posts_per_page' => 1,
-                    'category_name' => 'raphael-barros',
-                    'order' => 'DESC',
-                    'orderBy' => 'ID'
-                ));
-            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                ?>
+            $the_query = new WP_Query(array(
+                'category_name' => 'raphael-barros',
+                'posts_per_page' => '1',
+                'order' => 'DESC',
+                'orderBy' => 'ID'
+            ));
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <a href="<?php echo home_url('/');?>categoria/coluna/raphael-barros">
                     <?php the_title(); ?>
                 </a>
-                <?php
-            endwhile;
-            else :
-                _e('Aguardando Publicações.');
-            endif;
+            <?php
+                endwhile;
             wp_reset_postdata();
             ?>
         </div>
@@ -158,22 +137,18 @@
         </div>
         <div class="title-coluna">
             <?php
-            $query = new WP_Query( array(
-                'posts_per_page' => 1,
+            $the_query = new WP_Query(array(
                 'category_name' => 'roberto-pires',
+                'posts_per_page' => '1',
                 'order' => 'DESC',
                 'orderBy' => 'ID'
             ));
-            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                ?>
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <a href="<?php echo home_url('/');?>categoria/coluna/roberto-pires">
                     <?php the_title(); ?>
                 </a>
-                <?php
-            endwhile;
-            else :
-                _e('Aguardando Publicações.');
-            endif;
+            <?php
+                endwhile;
             wp_reset_postdata();
             ?>
         </div>

@@ -13,16 +13,13 @@
     </div>
     <div class="col s12 m4 l4">
         <?php
-            $query = new WP_Query( array(
-                'posts_per_page' => 1,
-                'category_name' => 'policia',
-                'order' => 'DESC',
-                'orderBy' => 'ID'
-            ));
-        ?>
-        <?php
-        if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-            ?>
+        $the_query = new WP_Query(array(
+            'category_name' => 'policia',
+            'posts_per_page' => 1,
+            'order' => 'DESC',
+            'orderBy' => 'ID'
+        ));
+        while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <a href="<?php the_permalink();?>">
                 <?php
                 if (has_post_thumbnail()) {
@@ -37,48 +34,43 @@
             </div>
             <div class="bigode-destaque">
                 <?php
-                    $bigode = get_field( "bigode" );
-                    if( $bigode ){
-                        echo $bigode;
-                    }else{
-                        echo ' ';
-                    }
+                $bigode = get_field( "bigode" );
+                if( $bigode ){
+                    echo $bigode;
+                }else{
+                    echo ' ';
+                }
                 ?>
             </div>
             <div class="hide-on-med-and-up">
                 <div class="line"></div>
                 <br/>
             </div>
-        <?php
-            endwhile;
-        else : ?>
-            <p><?php _e('Aguardando Publicações.'); ?></p>
-        <?php endif;
-        wp_reset_postdata();?>
+            <?php
+        endwhile;
+        wp_reset_postdata();
+        ?>
     </div>
     <div class="col s12 m8 l8">
         <div class="row">
             <div class="col s12 m6 l6">
 
                 <?php
-                $query = new WP_Query( array(
+                $the_query = new WP_Query(array(
+                    'category_name' => 'policia',
                     'posts_per_page' => 3,
                     'offset' => 1,
-                    'category_name' => 'policia',
                     'order' => 'DESC',
                     'orderBy' => 'ID'
                 ));
-                ?>
-                <?php
-                if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-                    ?>
+                while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <div class="row">
                         <div class="col s4 m4 l4">
                             <a href="<?php the_permalink();?>">
                                 <?php
-                                    if (has_post_thumbnail()) {
-                                        the_post_thumbnail('thumbnail');
-                                    }
+                                if (has_post_thumbnail()) {
+                                    the_post_thumbnail('thumbnail');
+                                }
                                 ?>
                             </a>
                         </div>
@@ -92,11 +84,8 @@
                     </div>
                     <?php
                 endwhile;
-                else : ?>
-                    <p><?php _e('Aguardando Publicações.'); ?></p>
-                <?php endif;
-                wp_reset_postdata();?>
-
+                wp_reset_postdata();
+                ?>
                 <div class="hide-on-med-and-up">
                     <div class="line"></div>
                     <br/>

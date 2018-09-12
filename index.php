@@ -134,7 +134,7 @@
                     <div class="line"></div>
                     <br/>
                     <div class="anuncio hide-on-med-and-down">
-                      <!-- Anúncio Cariri -->
+                        <!-- Anúncio Cariri -->
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                     Publicidade
                 </div>
                 <?php
-                    require 'slide2.php';
+                require 'slide2.php';
                 ?>
             </div>
             <div class="hide-on-med-and-up ajuste-line-tuto">
