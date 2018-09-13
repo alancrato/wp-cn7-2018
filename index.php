@@ -1,3 +1,5 @@
+<?php get_header();?>
+
 <div class="submenu-nav hide-on-med-and-up">
     <div class="container">
         <div class="row">
@@ -209,3 +211,5 @@
     require 'tudo.php';
     ?>
 </div>
+
+<?php get_footer();?>
