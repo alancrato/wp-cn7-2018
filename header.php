@@ -106,6 +106,20 @@
 <nav class="black" role="navigation">
     <div class="nav-wrapper container">
 
+        <!--List JC-->
+        <?php
+        $the_query = new WP_Query(array(
+            'post_type' => 'jornaldocariri',
+            'posts_per_page' => '1',
+            'order' => 'DESC',
+            'orderBy' => 'ID'
+        ));
+        while ($the_query->have_posts()) : $the_query->the_post();
+           $link = get_field( "link" );
+        endwhile;
+            wp_reset_postdata();
+        ?>
+
         <div class="row hide-on-med-and-down">
             <div class="col s12 m2 l2">
                 <a href="<?php echo home_url('/');?>" class="brand-logo">
@@ -131,7 +145,7 @@
                     <li><a href="<?php echo home_url('/');?>ultimas-noticias">Últimas</a></li>
                     <li><a href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
                     <li><a href="<?php echo home_url('/');?>contato">Contato</a></li>
-                    <li><a href="https://issuu.com/cearanews7/docs/jc-11a17setembro2018" target="_blank">Jornal do Cariri</a></li>
+                    <li><a href="<?=$link;?>" target="_blank">Jornal do Cariri</a></li>
                     <li><a href="http://www.plusfm.com.br" target="_blank">Plus FM</a></li>
                 </ul>
             </div>

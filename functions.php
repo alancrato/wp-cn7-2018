@@ -120,4 +120,40 @@
     }
     add_action('init','bootstrap_son_post_type_homicidios');
 
+    function post_type_jornaldocariri(){
+        $labels = array(
+            'name' => "Jornal do Cariri",
+            'singular_name' => "Jornal do Cariri",
+            'add_new'=> "Adicionar Novo Jornal do Cariri",
+            'add_new_label' => "Adicionar Novo Jornal do Cariri",
+            'all_item' => "Todos os Jornal do Cariri",
+            'add_new_item'=> "Adicionar Novo Jornal do Cariri",
+            'edit_item' => "Editar Jornal do Cariri",
+            'new_item' =>  "Novo Jornal do Cariri",
+            'view_item' => "Visualizar Jornal do Cariri",
+            'search_item' => "Procurar Jornal do Cariri",
+            'not_found' => "Nenhum Jornal do Cariri Encontrado",
+            'not_found_in_trash' => "Nenhum Jornal do Cariri Na Lixeira"
+        );
+        $args = array(
+
+            'labels' => $labels,
+            'public' => true,
+            'has_archive' => true,
+            'publicly_queryable' => true,
+            'show_in_rest' => true,
+            'rest_base' => 'jornaldocariri',
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'supports' => array(
+                'title','editor','thumbnail','excerpt'
+            ),
+            'menu_position' => 6,
+            'exclude_from_search' => false
+        );
+        register_post_type('jornaldocariri',$args);
+    }
+    add_action('init','post_type_jornaldocariri');
+
 

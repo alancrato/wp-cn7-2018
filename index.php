@@ -128,9 +128,28 @@
                     <div class="border-cariri"></div>
                 </div>
                 <div class="col s12">
-                    <a href="https://issuu.com/cearanews7/docs/jc-11a17setembro2018" target="_blank">
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/jornal.jpg"/>
-                    </a>
+                    <!--List JC-->
+                    <?php
+                    $the_query = new WP_Query(array(
+                        'post_type' => 'jornaldocariri',
+                        'posts_per_page' => '1',
+                        'order' => 'DESC',
+                        'orderBy' => 'ID'
+                    ));
+                    while ($the_query->have_posts()) : $the_query->the_post();
+                        $link = get_field( "link" );
+                    ?>
+                        <a href="<?=$link;?>" target="_blank">
+                            <?php
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail('large');
+                            }
+                            ?>
+                        </a>
+                    <?php
+                        endwhile;
+                        wp_reset_postdata();
+                    ?>
                     <div class="line"></div>
                     <br/>
                     <div class="anuncio hide-on-med-and-down">

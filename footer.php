@@ -1,5 +1,20 @@
 <footer class="page-footer amber lighten-1">
     <div class="container">
+        
+        <!--List JC-->
+        <?php
+        $the_query = new WP_Query(array(
+            'post_type' => 'jornaldocariri',
+            'posts_per_page' => '1',
+            'order' => 'DESC',
+            'orderBy' => 'ID'
+        ));
+        while ($the_query->have_posts()) : $the_query->the_post();
+            $link = get_field( "link" );
+        endwhile;
+        wp_reset_postdata();
+        ?>
+
         <div class="row">
             <div class="col s12 m3">
                 <div class="logo-footer">
@@ -11,7 +26,7 @@
                     <li><a class="black-text" href="<?php echo home_url('/');?>ultimas-noticias">Últimas</a></li>
                     <li><a class="black-text" href="<?php echo home_url('/');?>mais-lidas">Mais Lidas</a></li>
                     <li><a class="black-text" href="<?php echo home_url('/');?>contato">Contato</a></li>
-                    <li><a class="black-text" href="https://issuu.com/cearanews7/docs/jc-11a17setembro2018" target="_blank">Jornal do Cariri</a></li>
+                    <li><a class="black-text" href="<?=$link;?>" target="_blank">Jornal do Cariri</a></li>
                     <li><a class="black-text" href="http://www.plusfm.com.br" target="_blank">Plus Fm</a></li>
                 </ul>
             </div>
