@@ -13,7 +13,7 @@
 <div class="banners slider">
     <ul class="slides">
         <li>
-            <a href="https://www.bnb.gov.br/simuladores" target="_blank">
+            <a href="https://www.bnb.gov.br" target="_blank">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnb.gif" alt="Banco do Nordeste"/>
             </a>
         </li>

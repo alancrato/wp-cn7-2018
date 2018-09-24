@@ -80,7 +80,7 @@
                 Publicidade
             </div>
             <div class="gif-bnb-mobile">
-                <a href="https://www.bnb.gov.br/simuladores" target="_blank">
+                <a href="https://www.bnb.gov.br" target="_blank">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/bnbMobile.gif" width="100%" alt="Banco do Nordeste"/>
                 </a>
             </div>
