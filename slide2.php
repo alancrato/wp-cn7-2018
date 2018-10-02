@@ -11,6 +11,11 @@
             </a>
         </li>
         <li>
+            <a href="javascript:void(null)" target="_blank">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/formen.gif" alt="Dr. Formen"/>
+            </a>
+        </li>
+        <li>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- Footer Index -->
             <ins class="adsbygoogle"
