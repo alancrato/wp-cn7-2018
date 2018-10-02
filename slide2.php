@@ -11,7 +11,7 @@
             </a>
         </li>
         <li>
-            <a href="javascript:void(null)" target="_blank">
+            <a href="https://goo.gl/SM27y4" target="_blank">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pub/formen.gif" alt="Dr. Formen"/>
             </a>
         </li>
